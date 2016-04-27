@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <!--<com.shengtao.utils.LYDBHeader-->
+        <!--android:id="@+id/header"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/common_banner_height"-->
+        <!--android:orientation="vertical" />-->
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.shengtao.utils.HackyViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#EAF0F5" />
+
+        <TextView
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/viewpager_indicator"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp18" />
+
+        <RelativeLayout
+            android:id="@+id/ll_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/image1"
+            android:background="@color/common_light_black_transparent"
+            android:minHeight="@dimen/dp50"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal|bottom">
+
+            <TextView
+                android:id="@+id/tv_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/common_white"
+
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+
+                android:textSize="@dimen/sp17" />
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

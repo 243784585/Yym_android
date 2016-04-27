@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.shengtao.utils.LYDBHeader
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"></com.shengtao.utils.LYDBHeader>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp10"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_aboveus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp15"
+        android:lineSpacingExtra="@dimen/dp10"
+        android:text="廊坊市圣淘电子技术服务有限公司旗下的嗨抢是一种全新的互动购物体验方式,是时尚、潮流的风向标,能满足个性、年轻消费者的购物需求。
+\n嗨抢以“用1元给梦想一个机会”为宗旨,力求打造一个100%公平公正、100%正品保障、寄娱乐与购物一体化的新型购物网站。
+\n随着互联网的发展及网购消费模式的多样化,嗨抢势必成为中国电子商网站中最具活力的生力军及网民最爱的购物网,必将迅速崛起,成为互联网新时代的佼佼者!
+" />
+
+    <TextView
+        android:id="@+id/tv_snache"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp15"
+        android:textSize="@dimen/sp17"
+        android:layout_marginBottom="@dimen/dp10"/>
+
+    <TextView
+        android:id="@+id/tv_snachesub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="@dimen/dp10"
+        android:text="互联网与网络购物的兴起与迅速发展,给各位消费者带来了前所未有的便利。 品类丰富的各类商品不断地充斥着我们的眼球,不断的吸引着我们的欲望;眼花缭乱的商品让我们难以取舍,经济的制约让消费者们一次又一次的忍痛割爱,“鱼与熊掌难以兼得”让很多消费者在体验购物的过程中也尝受着无奈的痛苦。此时需要有一种新型购物模式在带给消费者购物快乐的同时,也能满足消费者的经济预期,对于每一种吸引眼球的商品,都只需要花费完全可以忽略的成本来得到它,嗨抢应势而生。
+\n嗨抢是一种全新的、充满乐趣与惊喜的购物模式：通过嗨抢将有共同爱好的人群聚集在一起;通过夺宝,将为您的生活带来无法预计的惊喜与刺激;参与夺宝,惊喜无限。每件商品您只需投入1元钱,即可获得一个“夺宝码”,每件商品可多次参与,参与次数越多,获得商品机率越大;当然,您也可以一次购买多个“夺宝码”;每件商品设有所需参与人数下限,只要参与人数达标,系统即会随机抽出一位幸运者,由这位幸运者获得这件商品。幸运轮流转,每个人都有机会在投入1元钱的成本下获得商品,心动就在眼前。
+\n自此,更新换代迅速的数码商品、供货紧俏的热门商品、心动却因各种限制而无法得到的商品,在嗨抢,您的所有欲望都将得到满足,那就让我们一起来来体验夺宝带来的快乐与魔力吧！
+" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp60"/>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

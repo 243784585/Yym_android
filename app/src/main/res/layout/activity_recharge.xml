@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.shengtao.utils.LYDBHeader
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"></com.shengtao.utils.LYDBHeader>
+
+    <!-- 用户个人信息 -->
+    <LinearLayout
+        android:id="@+id/ll_user_info"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp66"
+        android:orientation="horizontal">
+
+        <!-- 头像 -->
+        <com.shengtao.utils.CircleImageView
+            android:id="@+id/iv_head_image_recharge"
+            android:layout_width="@dimen/dp42"
+            android:layout_height="@dimen/dp42"
+            android:layout_marginLeft="@dimen/dp17"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/default_user_icon"/>
+
+        <!-- 文字信息 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp11"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_username_recharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/yym_black"
+                android:textSize="@dimen/dp12"
+                />
+
+            <TextView
+                android:id="@+id/tv_qb_recharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp6"
+                android:text=""
+                android:textSize="@dimen/dp12"
+                android:textColor="@color/yym_black"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp11"
+        android:background="@color/common_splitline_color"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp17"
+        android:layout_marginLeft="@dimen/dp17"
+        android:layout_marginBottom="@dimen/dp17"
+        android:textColor="@color/travel_details_gray"
+        android:textSize="@dimen/dp11"
+        android:text="选择充值金额(1元=1抢币)"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/dp17"
+            android:layout_marginRight="@dimen/dp17">
+
+            <RadioButton
+                android:id="@+id/rb_20yuan"
+                android:button="@null"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp39"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/selector_recharge"
+                android:textColor="@drawable/selector_recharge"
+                android:textSize="@dimen/dp12"
+                android:text="20元"/>
+            <RadioButton
+                android:id="@+id/rb_50yuan"
+                android:button="@null"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp39"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/dp11"
+                android:layout_marginRight="@dimen/dp11"
+                android:background="@drawable/selector_recharge"
+                android:textColor="@drawable/selector_recharge"
+                android:textSize="@dimen/dp12"
+                android:text="50元"/>
+            <RadioButton
+                android:id="@+id/rb_100yuan"
+                android:button="@null"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp39"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/selector_recharge"
+                android:textColor="@drawable/selector_recharge"
+                android:textSize="@dimen/dp12"
+                android:text="100元"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="@dimen/dp11"
+            android:layout_marginLeft="@dimen/dp17"
+            android:layout_marginRight="@dimen/dp17">
+
+            <RadioButton
+                android:id="@+id/rb_200yuan"
+                android:button="@null"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp39"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/selector_recharge"
+                android:textColor="@drawable/selector_recharge"
+                android:textSize="@dimen/dp12"
+                android:text="200元"/>
+            <RadioButton
+                android:id="@+id/rb_500yuan"
+                android:button="@null"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp39"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/dp11"
+                android:layout_marginRight="@dimen/dp11"
+                android:background="@drawable/selector_recharge"
+                android:textColor="@drawable/selector_recharge"
+                android:textSize="@dimen/dp12"
+                android:text="500元"/>
+            <EditText
+                android:id="@+id/et_input_amount"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp39"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/selector_recharge_et"
+                android:textColor="@color/yym_black"
+                android:textSize="@dimen/dp12"
+                android:maxLength="6"
+                android:numeric="integer"
+                android:singleLine="true"
+                android:hint="输入金额"
+                android:textColorHint="@color/register_hint_color"/>
+
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp17"
+        android:layout_marginLeft="@dimen/dp17"
+        android:layout_marginBottom="@dimen/dp6"
+        android:textColor="@color/travel_details_gray"
+        android:textSize="@dimen/dp11"
+        android:text="选择支付方式"
+        />
+
+    <include layout="@layout/recharge_pay_types"/>
+    
+    <!-- 分割线 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/common_splitline_color"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp11">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/dp88"
+            android:layout_above="@+id/btn_now_recharge"
+            android:background="@color/common_splitline_color"
+            />
+
+        <Button
+            android:id="@+id/btn_now_recharge"
+            android:layout_marginTop="@dimen/dp11"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/dp11"
+            android:layout_marginRight="@dimen/dp11"
+            android:layout_height="@dimen/dp34"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp14"
+            android:layout_gravity="center_horizontal|bottom"
+            android:text="立即充值"
+            android:background="@drawable/btn_1"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

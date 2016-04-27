@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/common_white"
+
+>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/common_white"
+    >
+
+    <ImageView
+        android:id="@+id/iv_banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp180"
+        android:src="@drawable/moren"
+        android:scaleType="fitXY"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp11"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="6dp">
+
+        <TextView
+            android:id="@+id/tv_published"
+            android:layout_width="@dimen/dp40"
+            android:layout_height="@dimen/dp16"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_red_radius_border"
+            android:gravity="center"
+            android:text="已揭晓"
+            android:textColor="@color/yym_common_red"
+            android:textSize="@dimen/sp10" />
+
+        <TextView
+            android:id="@+id/tv_currentNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp5"
+            android:lineSpacingExtra="@dimen/dp4"
+            android:maxLines="2"
+            android:text="(第一期)布雷尔第二行第二行第二行第二行第二行第二行第二行第二行"
+            android:textColor="@color/yym_black"
+            android:textSize="@dimen/sp13" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_marginRight="@dimen/dp11"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/dp11"
+        >
+
+        <TextView
+            android:id="@+id/tv_all_join_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="共需799人次"
+            android:textColor="@color/yym_common_gray"
+            android:textSize="@dimen/sp12" />
+
+        <TextView
+            android:id="@+id/tv_current_join_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp195"
+            android:text="剩余3000"
+            android:textColor="@color/yym_common_gray"
+            android:textSize="@dimen/sp12" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pro_buy_count"
+        style="@style/ProgressBar_Mini"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp5"
+        android:layout_marginTop="@dimen/dp5"
+        android:layout_marginLeft="@dimen/dp11"
+        android:layout_marginBottom="@dimen/dp10"
+        android:progress="30" />
+
+        </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:background="@color/common_splitline" />
+
+    <!--已开奖-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_win"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dp12"
+        android:layout_marginBottom="@dimen/dp12"
+        android:visibility="visible"
+        >
+
+        <com.shengtao.utils.CircleImageView
+            android:id="@+id/iv_userimg"
+            android:layout_width="@dimen/dp66"
+            android:layout_height="@dimen/dp66"
+            android:layout_marginLeft="@dimen/dp23"
+            android:layout_marginRight="@dimen/dp23"
+            android:src="@drawable/default_user_icon"
+            android:layout_gravity="center"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp70"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="获  奖  者:  "
+                    android:textSize="@dimen/sp11"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="没钱了，不买了"
+                    android:textColor="@color/common_blue"
+                    android:textSize="@dimen/sp12"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp1"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="用 户 I P :  "
+                    android:textSize="@dimen/sp11"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_ip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="63.112.122.122(海南)"
+                    android:textColor="@color/common_gray"
+                    android:textSize="@dimen/sp12"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp1"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="本期参与:  "
+                    android:textSize="@dimen/sp11"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_join_nummber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2人次"
+                    android:textColor="@color/common_gray"
+                    android:textSize="@dimen/sp12"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp1"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="揭晓时间:  "
+                    android:textSize="@dimen/sp11"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_open_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2015-11-02 12:00:23.123"
+                    android:textColor="@color/common_gray"
+                    android:textSize="@dimen/sp12"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+        <ImageView
+            android:id="@+id/iv_win"
+            android:layout_width="@dimen/dp66"
+            android:layout_height="@dimen/dp66"
+            android:src="@drawable/huojiangzhe"
+            android:layout_gravity="left|top"
+            />
+
+        <ImageView
+            android:id="@+id/iv_published"
+            android:layout_width="@dimen/dp40"
+            android:layout_height="@dimen/dp66"
+            android:src="@drawable/shangqijiexiao"
+            android:layout_gravity="top|right"
+            android:layout_marginRight="@dimen/dp11"
+            android:visibility="visible"
+            />
+    </FrameLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp40"
+        android:background="@color/common_red"
+        android:gravity="center"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="幸运号:  10000052"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/dp11"
+            android:textSize="@dimen/sp13"
+            />
+
+        <TextView
+            android:id="@+id/tv_calc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="计算详情 >"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp11"
+            android:textSize="@dimen/sp13"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_calc_details"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp55"
+        android:padding="@dimen/dp11"
+        android:layout_marginLeft="@dimen/dp11"
+        android:layout_marginRight="@dimen/dp11"
+        android:layout_marginBottom="@dimen/dp11"
+        android:background="@drawable/btn_1"
+        android:visibility="visible"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="揭晓倒计时："
+            android:textColor="@color/common_white"
+            android:textSize="@dimen/sp13"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_daojishi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="03:45:45"
+            android:textColor="@color/common_white"
+            android:textSize="@dimen/sp16"
+            android:layout_centerInParent="true"
+            />
+
+        <!--<TextView
+            android:id="@+id/tv_calc1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="计算详情  >"
+            android:textColor="@color/common_white"
+            android:textSize="@dimen/sp13"
+            />-->
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_lucknum"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp55"
+        android:padding="@dimen/dp11"
+        android:layout_marginLeft="@dimen/dp11"
+        android:layout_marginRight="@dimen/dp11"
+        android:layout_marginBottom="@dimen/dp11"
+        android:background="@drawable/btn_1"
+        android:visibility="visible"
+        >
+
+        <TextView
+            android:id="@+id/tv_luck_nummber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="幸运号: 10000052"
+            android:textColor="@color/common_white"
+            android:textSize="@dimen/sp13"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_calc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="计算详情  >"
+            android:textColor="@color/common_white"
+            android:textSize="@dimen/sp13"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp10"
+        android:background="@color/common_splitline"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_published"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp40"
+        android:gravity="center"
+        android:background="@color/common_white"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/dp15"
+            android:layout_height="@dimen/dp15"
+            android:src="@drawable/shalou"
+            android:layout_marginLeft="@dimen/dp11"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="往期揭晓"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp35"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/dp15"
+            android:layout_height="@dimen/dp15"
+            android:src="@drawable/more_black"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp11"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp10"
+        android:background="@color/common_splitline"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/common_white"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本期参与"
+            android:textSize="@dimen/sp15"
+            android:textColor="#555555"
+            android:layout_marginLeft="@dimen/dp11"
+            />
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_join_time"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="（2015-11-02 08:00:00开始）"-->
+            <!--android:textSize="@dimen/sp12"-->
+            <!--android:textColor="#555555"-->
+            <!--android:layout_marginLeft="@dimen/dp11"-->
+            <!--/>-->
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:background="@color/common_splitline" />
+</LinearLayout>
+</ScrollView>

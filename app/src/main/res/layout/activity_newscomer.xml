@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <com.shengtao.utils.LYDBHeader
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        ></com.shengtao.utils.LYDBHeader>
+
+    <!--<ViewFlipper
+        android:id="@+id/vf"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"></ViewFlipper>-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ll_user_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp620"
+            android:background="@drawable/newuser_help"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp620"
+            android:background="@drawable/newuser">
+
+            <Button
+                android:id="@+id/btn_snache_now"
+                android:layout_width="@dimen/dp170"
+                android:layout_height="@dimen/dp44"
+                android:background="@drawable/btn_1"
+                android:text="立即夺宝"
+                android:layout_marginBottom="@dimen/dp48"
+                android:textSize="@dimen/sp16"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+        <!--<ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/newuser_helptwo"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/newuser_helpthree"/>-->
+        <!--<ImageView
+            android:layout_width="match_parent"
+            android:layout_height="274dp"
+            android:background="@drawable/newuser_helptwo"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="304dp"
+            android:background="@drawable/newuser_helpthree"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="495dp"
+            android:background="@drawable/newuser_helpfour"/>-->
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

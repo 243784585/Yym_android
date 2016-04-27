@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp11"
+        android:layout_marginRight="@dimen/dp11"
+        android:text="客服反馈"
+        android:textSize="@dimen/sp14"
+        android:textColor="#494949"
+        android:layout_marginTop="@dimen/dp11"
+        />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="这是详情bulabulabula"
+        android:textSize="@dimen/sp13"
+        android:textColor="@color/yym_common_gray"
+        android:layout_marginLeft="@dimen/dp11"
+        android:layout_marginRight="@dimen/dp11"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginBottom="@dimen/dp9"
+        />
+
+</LinearLayout>

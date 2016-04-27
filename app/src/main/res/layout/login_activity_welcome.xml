@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+    <!--<ImageView-->
+        <!--android:id="@+id/iv_start_main"-->
+        <!--android:layout_width="@dimen/dp212"-->
+        <!--android:layout_height="@dimen/dp56"-->
+        <!--android:src="@drawable/app_btn_1_3"-->
+        <!--android:background="@drawable/app_btn_2_2"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_marginBottom="@dimen/dp72"-->
+        <!--android:visibility="visible"-->
+        <!--android:text="立即前往"-->
+        <!--android:textSize="16sp"-->
+        <!--android:gravity="center"-->
+        <!--android:textColor="@color/white" />-->
+
+    <ImageView
+        android:id="@+id/iv_start_main"
+        android:layout_width="@dimen/dp212"
+        android:layout_height="@dimen/dp56"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp72"
+        android:visibility="gone"
+        android:text="立即前往"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="@color/white" />
+</RelativeLayout>

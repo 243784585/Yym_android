@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/prize_item"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/common_white">
+
+    <ImageView
+        android:id="@+id/prize_img"
+        android:layout_width="@dimen/dp80"
+        android:layout_height="@dimen/dp80"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/dp15"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginTop="@dimen/dp15"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_user_icon" />
+
+    <LinearLayout
+        android:id="@+id/layout_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp15"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp15"
+        android:layout_toLeftOf="@+id/btn_shopcart"
+        android:layout_toRightOf="@+id/prize_img"
+        android:background="@drawable/app_right_line"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/dp10">
+
+        <TextView
+            android:id="@+id/tv_prize_title"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp35"
+            android:ellipsize="end"
+            android:lineSpacingExtra="@dimen/dp5"
+            android:maxLines="2"
+            android:text="TITLE"
+            android:textColor="@color/common_black"
+            android:textSize="@dimen/sp13" />
+
+        <ProgressBar
+            android:id="@+id/pro_buy_count"
+            style="@style/ProgressBar_Mini"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp5"
+            android:layout_marginTop="@dimen/dp18"
+            android:progress="30" />
+
+        <RelativeLayout
+            android:id="@+id/layout_bingo"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp8">
+
+            <TextView
+                android:id="@+id/tv_partake_title"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:gravity="left|center"
+                android:text="已参与:"
+                android:textColor="@color/yym_common_gray"
+                android:textSize="@dimen/sp12" />
+
+            <TextView
+                android:id="@+id/tv_buy_count"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@+id/tv_partake_title"
+                android:gravity="left|center"
+                android:text="10"
+                android:textColor="@color/yym_common_red"
+                android:textSize="@dimen/sp12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_toLeftOf="@+id/tv_surplus_buy_count"
+                android:gravity="left|center"
+                android:text="剩余:"
+                android:textColor="@color/yym_common_gray"
+                android:textSize="@dimen/sp12" />
+
+            <TextView
+                android:id="@+id/tv_surplus_buy_count"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="left|center"
+                android:text="10"
+                android:textColor="@color/yym_common_red"
+                android:textSize="@dimen/sp12" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_shopcart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/layout_info"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/layout_info"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_join_manifest"
+            android:layout_width="@dimen/dp70"
+            android:layout_height="@dimen/dp38"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:background="@drawable/btn_red_radius_border"
+            android:gravity="center"
+            android:text="加入清单"
+            android:padding="@dimen/dp10"
+            android:textColor="@drawable/color_2"
+            android:textSize="@dimen/sp12" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ico_characteristic"
+        android:layout_width="@dimen/dp25"
+        android:layout_height="@dimen/dp30"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/dp5"
+        android:background="@drawable/tenyuan"
+        android:visibility="gone" />
+</RelativeLayout>

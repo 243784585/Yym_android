@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+                android:fitsSystemWindows="true">
+	<com.shengtao.utils.LYDBHeader
+		android:id="@+id/single_img_header"
+		android:layout_width="fill_parent"
+		android:layout_alignParentTop="true"
+		android:layout_height="@dimen/dp50"></com.shengtao.utils.LYDBHeader>
+	<GridView
+		android:id="@+id/single_image_grid"
+		android:layout_below="@+id/single_img_header"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:padding="@dimen/dp10"
+		android:listSelector="@android:color/transparent"
+		android:cacheColorHint="@android:color/transparent"
+		android:stretchMode="columnWidth"
+		android:horizontalSpacing="@dimen/dp20"
+		android:gravity="center"
+		android:verticalSpacing="@dimen/dp20"
+		android:columnWidth="@dimen/dp90"
+		android:numColumns="3" >
+	</GridView>
+</RelativeLayout>

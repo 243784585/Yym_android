@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:background="@color/common_white"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/titlebar_tv"
+            style="@style/TextViewTitle"
+            android:layout_centerInParent="true"
+            android:text="最新揭晓"
+            android:textColor="@color/yym_common_red"
+            android:textSize="@dimen/sp17"
+            android:gravity="center"
+             />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/common_splitline" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/gv_new_publish"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/common_white"
+            android:clipToPadding="true"
+            android:descendantFocusability="blocksDescendants"
+            android:scrollbars="none"
+            android:stackFromBottom="false"
+            android:stretchMode="columnWidth"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent"
+            android:visibility="visible"></com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+        <com.shengtao.baseview.TipsLayoutNormal
+            android:id="@+id/tl_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/common_background"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

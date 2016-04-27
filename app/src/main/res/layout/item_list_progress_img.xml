@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp80"
+    android:layout_height="@dimen/dp80" >
+    <ImageView
+        android:id="@+id/iv_uploadimg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/ic_launcher"/>
+    <ProgressBar
+        android:id="@+id/rpb_uploadbar"
+        android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <!--<com.motu7niu.motu7niu.RoundProgressBar-->
+        <!--android:visibility="visible"-->
+        <!--android:id="@+id/rpb_uploadbar"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+
+        <!--android_custom:roundColor="#D1D1D1"-->
+        <!--android_custom:roundProgressColor="@android:color/black"-->
+        <!--android_custom:textColor="#9A32CD"-->
+        <!--android_custom:textIsDisplayable="false"-->
+        <!--android_custom:roundWidth="10dip"-->
+        <!--android_custom:textSize="18sp"/>-->
+</RelativeLayout>

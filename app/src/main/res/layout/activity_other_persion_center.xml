@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_animcotainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--头布局 start from here-->
+            <RelativeLayout
+                android:id="@+id/app_top_bar"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp50"
+                android:background="@color/yym_head_space">
+
+                <LinearLayout
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_vertical"
+                    android:minWidth="@dimen/dp100"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/back_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="@dimen/dp17"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp16"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/back_image"
+                        android:layout_width="@dimen/dp20"
+                        android:layout_height="@dimen/dp20"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/fanhui"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="TA的个人中心"
+                    android:textColor="#ff4447"
+                    android:textSize="@dimen/dp16" />
+
+                <ImageView
+                    android:id="@+id/title_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dp10"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:src="@mipmap/question"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/btn_shopcart_show"
+                    android:layout_width="@dimen/dp60"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true">
+
+                    <ImageView
+                        android:id="@+id/img_shopcart_ico"
+                        android:layout_width="@dimen/dp25"
+                        android:layout_height="@dimen/dp25"
+                        android:layout_centerInParent="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_shopcart_selector" />
+
+                    <LinearLayout
+                        android:id="@+id/layout_shopcart_num"
+                        android:layout_width="@dimen/dp16"
+                        android:layout_height="@dimen/dp16"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="@dimen/dp10"
+                        android:layout_marginTop="@dimen/dp7"
+                        android:background="@drawable/radius_line_red_4"
+                        android:orientation="vertical"
+                        android:padding="0dp"
+                        android:visibility="invisible">
+
+                        <TextView
+                            android:id="@+id/tv_shopcart_num"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp8" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+            <!--头布局 end from here-->
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/common_splitline_color"/>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_header_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp83"
+                        android:background="#ff4447"
+                        android:orientation="horizontal">
+
+                        <com.shengtao.utils.CircleImageView
+                            android:id="@+id/iv_img"
+                            android:layout_width="@dimen/dp41"
+                            android:layout_height="@dimen/dp41"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp17"
+                            android:src="@drawable/default_user_icon" />
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp13"
+                            android:text=""
+                            android:textColor="@color/common_white"
+                            android:textSize="@dimen/dp16" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/status_detail_tab"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioGroup
+                            android:id="@+id/rg_status_detail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FFFFFF"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rb_dynamic_state"
+                                style="@style/RadioButtonStatusDetailTab"
+                                android:checked="true"
+                                android:text="动态" />
+
+                            <RadioButton
+                                android:id="@+id/rb_winner_detail"
+                                style="@style/RadioButtonStatusDetailTab"
+                                android:text="中奖详情" />
+
+                            <RadioButton
+                                android:id="@+id/rb_show_record"
+                                style="@style/RadioButtonStatusDetailTab"
+                                android:text="晒单记录" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/common_splitline" />
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/vp_other_center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <com.shengtao.baseview.TipsLayoutNormal
+                    android:id="@+id/tl_loading"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/common_background"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

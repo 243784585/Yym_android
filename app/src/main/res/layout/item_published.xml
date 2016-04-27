@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/common_white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_open_time"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp35"
+            android:layout_marginLeft="@dimen/dp11"
+            android:gravity="center"
+            android:text="第222期 揭晓时间: 2015-10-27 13:24:25"
+            android:textColor="#494949"
+            android:textSize="@dimen/sp11" />
+
+        <ImageView
+            android:layout_width="@dimen/dp16"
+            android:layout_height="@dimen/dp16"
+            android:src="@drawable/more_black"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp11"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/common_splitline" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp11"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="@dimen/dp85"
+            android:layout_height="@dimen/dp85"
+            android:layout_marginLeft="@dimen/dp11"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_user_icon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp85"
+            android:layout_marginLeft="@dimen/dp15"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="获  奖  者: "
+                    android:textColor="#888888"
+                    android:textSize="@dimen/sp11" />
+
+
+                <TextView
+                    android:id="@+id/tv_winner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp1"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="没钱了，不买了 "
+                    android:textColor="@color/common_blue"
+                    android:textSize="@dimen/sp13" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp3"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="用  户  IP: "
+                    android:textColor="#888888"
+                    android:textSize="@dimen/sp11" />
+
+                <TextView
+                    android:id="@+id/tv_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp4"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="63.112.122.122(海南) "
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp13" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp3"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="幸运号码: "
+                    android:textColor="#888888"
+                    android:textSize="@dimen/sp11" />
+
+                <TextView
+                    android:id="@+id/tv_luck_nummber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp4"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="00000123 "
+                    android:textColor="@color/common_red"
+                    android:textSize="@dimen/sp13" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp3"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="本期参与: "
+                    android:textColor="#888888"
+                    android:textSize="@dimen/sp11" />
+
+
+                <TextView
+                    android:id="@+id/tv_join_nummber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp4"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="2人次 "
+                    android:textColor="@color/common_red"
+                    android:textSize="@dimen/sp13" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_to_shareorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp11"
+        android:orientation="vertical"
+        android:padding="@dimen/dp10">
+
+        <TextView
+            android:id="@+id/tv_comment_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="终于到了，棒棒哒！！！"
+            android:textColor="#333333"
+            android:textSize="@dimen/sp13" />
+
+        <TextView
+            android:id="@+id/tv_share_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:text="(第222期) 2012年MAMA亚洲音乐盛典最佳亚洲新人团体"
+            android:textColor="#999999"
+            android:textSize="@dimen/sp10" />
+
+        <TextView
+            android:id="@+id/tv_share_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:text="感谢一圆梦，让我圆了自己的梦。"
+            android:textColor="#666666"
+            android:textSize="@dimen/sp10" />
+
+        <com.shengtao.utils.MyGridView
+            android:id="@+id/lv_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp16"
+            android:layout_marginLeft="@dimen/dp5"
+            android:background="@color/common_white"
+            android:clipToPadding="true"
+            android:descendantFocusability="blocksDescendants"
+            android:horizontalSpacing="@dimen/dp2"
+            android:numColumns="4"
+            android:scrollbars="none"
+            android:stackFromBottom="false"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="@dimen/dp2"></com.shengtao.utils.MyGridView>
+
+        <ImageView
+            android:id="@+id/image_single"
+            android:layout_width="@dimen/dp160"
+            android:layout_height="@dimen/dp160"
+            android:layout_marginLeft="@dimen/dp40"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+</LinearLayout>

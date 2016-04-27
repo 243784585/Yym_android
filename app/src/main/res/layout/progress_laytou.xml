@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   android:layout_gravity="center"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <!--<ImageView-->
+        <!--android:id="@+id/loadingIv"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:background="@anim/frame"/>-->
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <com.shengtao.utils.AVLoadingIndicatorView
+            android:id="@+id/loadingIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            app:indicator="BallPulse"
+            />
+
+    <!--</LinearLayout>-->
+
+    <TextView
+        android:id="@+id/loadingTv"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_below="@+id/loadingIv"
+		android:textSize="@dimen/sp12"
+        android:text="正在加载中.." />
+
+</RelativeLayout>

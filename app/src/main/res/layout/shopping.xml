@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/layout_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_header"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+    <RelativeLayout
+        android:id="@+id/layout_shoppcart_main"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/pull_refresh_shoppcart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/prize_buy"
+            android:background="#ffffff">
+
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/pull_refresh_shoppcart"
+            android:background="@color/common_splitline_color"/>
+
+        <LinearLayout
+            android:id="@+id/prize_buy"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp52"
+            android:layout_alignParentBottom="true"
+            android:background="@null"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/rl_sub"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp17">
+
+                <LinearLayout
+                    android:id="@+id/ll_default"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="共"
+                        android:textSize="@dimen/sp14"/>
+
+                    <TextView
+                        android:id="@+id/tv_prize_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="@dimen/sp14"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="件商品，总共需要 "
+                        android:textSize="@dimen/sp14"/>
+
+                    <TextView
+                        android:id="@+id/tv_money_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="#ff5050"
+                        android:textSize="@dimen/sp14"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" 抢币"
+                        android:textSize="@dimen/sp14"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btn_sumbit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:paddingRight="@dimen/dp10"
+                    android:paddingTop="@dimen/dp10">
+
+                    <TextView
+                        android:id="@+id/tv_shopping_submit"
+                        android:layout_width="@dimen/dp79"
+                        android:layout_height="@dimen/dp34"
+                        android:background="@drawable/btn_1"
+                        android:gravity="center"
+                        android:text="提交订单"
+                        android:textColor="#ffffff"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/prize_bu"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp52"
+            android:layout_alignParentBottom="true"
+            android:background="@null"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/prize_bue"
+                android:layout_width="@dimen/dp232"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/cb_choice"
+                    android:layout_width="@dimen/dp17"
+                    android:layout_height="@dimen/dp17"
+                    android:clickable="false"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp9"
+                    android:layout_marginRight="@dimen/dp9"
+                    />
+                <RelativeLayout
+                    android:id="@+id/rl_all_delte"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="全选"
+                            android:textColor="#494949"
+                            android:textSize="@dimen/sp14"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="共选中 "
+                                android:textColor="#494949"
+                                android:textSize="@dimen/sp14"/>
+
+                            <TextView
+                                android:id="@+id/tv_money_cot"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textColor="#ff4447"
+                                android:textSize="@dimen/sp14"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" 件商品"
+                                android:textColor="#494949"
+                                android:textSize="@dimen/sp14"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_delete"
+                android:layout_width="@dimen/dp79"
+                android:layout_height="@dimen/dp34"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp9"
+                android:layout_marginTop="@dimen/dp9"
+                android:background="@drawable/btn_red_radius_border"
+                android:gravity="center"
+                android:text="删除"
+                android:textColor="@drawable/color_2"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.shengtao.baseview.TipsLayoutNormal1
+        android:id="@+id/tl_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_background"
+        android:visibility="gone"/>
+
+    </FrameLayout>
+</LinearLayout>
+

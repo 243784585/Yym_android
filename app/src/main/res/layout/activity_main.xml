@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/common_white"
+    >
+
+    <!--<DrawerLayout-->
+    <!--android:id="@+id/dl_layout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/toolbar"-->
+        <!--android:minHeight="?attr/actionBarSize"-->
+        <!--android:background="@color/colorPrimary"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_alignParentStart="true" />-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/main_layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@color/background_material_light"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_below="@id/toolbar">-->
+
+        <!-- 其他控件全放在这里-->
+
+
+        <!--<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:id="@+id/main_drawer_layout"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:layout_marginBottom="56.0dip"-->
+        <!--android:background="@*android:color/transparent">-->
+
+        <!--<FrameLayout-->
+        <!--android:id="@+id/main_frg_content"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:visibility="gone" />-->
+    <FrameLayout
+        android:id="@+id/fl_animcotainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/common_white">
+        <com.shengtao.utils.NoScrollViewPager
+            android:id="@+id/vp_main_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/activity_bottom" />
+
+        <include
+            android:id="@+id/activity_bottom"
+            layout="@layout/activity_main_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </FrameLayout>
+    <!--</LinearLayout>-->
+
+
+
+        <!--<ListView-->
+            <!--android:id="@+id/main_left_drawer_layout"-->
+            <!--android:layout_width="120.0dp"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_gravity="start"-->
+            <!--android:background="@*android:color/transparent"-->
+            <!--android:paddingTop="50.0dp"-->
+            <!--android:divider="@null"-->
+            <!--android:dividerHeight="10dp"-->
+            <!--/>-->
+    <!--</android.support.v4.widget.DrawerLayout>-->
+
+    <!--<include-->
+        <!--android:id="@+id/drawlayout_search"-->
+        <!--layout="@layout/drawlayout_search"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="start" />-->
+
+    <!--</DrawerLayout>-->
+
+</RelativeLayout>

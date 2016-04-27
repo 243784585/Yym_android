@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp60"
+    android:background="@drawable/mm_listitem"
+    android:gravity="center_vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="@dimen/dp55"
+            android:layout_height="@dimen/dp55"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/dp4"
+            android:padding="@dimen/dp5"
+            android:src="@drawable/roominfo_add_btn" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp7"
+            android:layout_toRightOf="@id/avatar"
+            android:text="@string/newchat"
+            android:textColor="#8C8C8C"
+            android:textSize="@dimen/sp18" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_group"
+        android:background="#E0E0E0"
+        android:visibility="gone" />
+
+</RelativeLayout>

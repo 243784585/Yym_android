@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+   <!--<include layout="@layout/app_header"/>-->
+
+
+    <com.shengtao.utils.LYDBHeader
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_alignParentTop="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/btn_submit"
+                android:background="#E8E8E8"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/layout_all_count"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/dp43"
+                            android:background="#ffffff"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/dp11"
+                            android:paddingRight="@dimen/dp11">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="奖品合计"
+                                android:textColor="#494949"
+                                android:textSize="@dimen/sp12" />
+
+                            <TextView
+                                android:id="@+id/tv_all_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/dp26"
+                                android:text="1抢币"
+                                android:textColor="#ff5050"
+                                android:textSize="@dimen/sp12" />
+
+                            <ImageView
+                                android:id="@+id/ico_all_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:background="#FFF3C2">
+
+                        <LinearLayout
+                            android:id="@+id/layout_prizes"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp11"
+                            android:layout_marginRight="@dimen/dp11"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/dp28"
+                                android:gravity="center_vertical"
+                                android:text="注：请确认如下订单明细"
+                                android:textColor="#9b7654"
+                                android:textSize="@dimen/sp10" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dp1"
+                                android:background="#dbdbdb" />
+
+                            <LinearLayout
+                                android:id="@+id/layout_prize_list"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:paddingBottom="@dimen/dp5" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/dp425"
+                        android:background="#E8E8E8"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/dp10"
+                            android:orientation="vertical" />
+
+                        <LinearLayout
+                            android:id="@+id/layout_balance"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:id="@+id/cb_balance"
+                                android:background="@drawable/shopcart_background_selector"
+                                android:layout_width="fill_parent"
+                                android:layout_height="@dimen/dp43"
+                                android:orientation="vertical"
+                                android:paddingLeft="@dimen/dp11"
+                                android:paddingRight="@dimen/dp11">
+
+
+                                <TextView
+                                    android:gravity="center_vertical"
+                                    android:id="@+id/tv_user_balance"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="余额支付 (余额:　0 抢币)"
+                                    android:textColor="@color/yym_common_black"
+                                    android:textSize="@dimen/sp10" />
+
+
+                                <TextView
+                                    android:id="@+id/tv_pay_balance_count"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="@dimen/dp30"
+                                    android:text=""
+                                    android:textSize="@dimen/sp14" />
+
+                                <ImageView
+                                    android:id="@+id/ico_balance"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/check_selector" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layout_other"
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/dp20"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/dp11">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="其它支付方式"
+                                android:textColor="#888888"
+                                android:textSize="@dimen/dp11" />
+                            />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_prize_pay"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff">
+
+                            <include layout="@layout/recharge_pay_types" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp38"
+                android:layout_margin="@dimen/dp9"
+                android:background="@drawable/btn_shape"
+                android:text="确认提交"
+                android:textColor="#ffffff"
+                android:layout_alignParentBottom="true"
+                android:textSize="@dimen/sp15" />
+        </RelativeLayout>
+
+    <com.shengtao.baseview.TipsLayoutNormal
+        android:id="@+id/tl_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_background"
+        android:visibility="gone" />
+
+</LinearLayout>

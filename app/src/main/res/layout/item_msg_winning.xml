@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_goods_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="[2015-12-11] 恭喜您中奖了！"
+        android:textColor="@color/common_black"
+        android:textSize="@dimen/sp13"
+        android:lineSpacingMultiplier="1.5"
+        android:padding="@dimen/dp10"
+        />
+</LinearLayout>

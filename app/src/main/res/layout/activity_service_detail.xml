@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0EFF5"
+    >
+
+    <com.shengtao.utils.LYDBHeader
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"></com.shengtao.utils.LYDBHeader>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1-02 20:02"
+        android:textColor="#bbbbbb"
+        android:textSize="@dimen/sp10"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp11"
+        android:layout_marginBottom="@dimen/dp9"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#666666"
+        android:text="1.汽车类奖品获得者拥有该奖品20年免费购买权；"
+        android:textSize="@dimen/sp13"
+        android:lineSpacingExtra="@dimen/dp12"
+        android:layout_marginLeft="@dimen/dp17"
+        android:layout_marginRight="@dimen/dp17"
+        android:paddingLeft="@dimen/dp13"
+        android:paddingRight="@dimen/dp13"
+        android:paddingTop="@dimen/dp17"
+        android:paddingBottom="@dimen/dp22"
+        android:background="@color/common_white"
+        />
+
+
+</LinearLayout>

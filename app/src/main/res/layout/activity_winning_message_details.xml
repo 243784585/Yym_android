@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <com.shengtao.utils.LYDBHeader
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp50"></com.shengtao.utils.LYDBHeader>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#494949"
+                android:textSize="@dimen/sp13"
+                android:lineSpacingExtra="@dimen/dp7"
+                android:text="title"
+                android:layout_marginLeft="@dimen/dp11"
+                android:layout_marginTop="@dimen/dp7"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="您的幸运号码："
+                android:textSize="@dimen/sp12"
+                android:textColor="@color/yym_common_gray"
+                android:layout_marginTop="@dimen/dp28"
+                android:layout_marginLeft="@dimen/dp11"
+                />
+
+            <TextView
+                android:id="@+id/tv_luck_nummber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10002356"
+                android:textSize="@dimen/sp12"
+                android:textColor="@color/yym_common_red"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginLeft="@dimen/dp11"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="您中奖的宝物："
+                android:textSize="@dimen/sp12"
+                android:textColor="@color/yym_common_gray"
+                android:layout_marginTop="@dimen/dp28"
+                android:layout_marginLeft="@dimen/dp11"
+                />
+
+            <TextView
+                android:id="@+id/tv_goods_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="第xx期"
+                android:textSize="@dimen/sp12"
+                android:textColor="#494949"
+                android:layout_marginTop="@dimen/dp9"
+                android:layout_marginLeft="@dimen/dp11"
+                android:lineSpacingExtra="@dimen/dp7"
+                />
+
+        </LinearLayout>
+        <com.shengtao.baseview.TipsLayoutNormal
+            android:id="@+id/tl_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/common_background"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

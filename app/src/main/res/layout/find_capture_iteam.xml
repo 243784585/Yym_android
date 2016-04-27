@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp34"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dp11"
+            android:layout_height="@dimen/dp11"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp11"
+            android:src="@mipmap/clock_red" />
+
+        <TextView
+            android:id="@+id/tv_times"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp7"
+            android:gravity="center_vertical"
+            android:text="已结束"
+            android:textColor="#FE4546"
+            android:textSize="@dimen/sp11" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dp17">
+
+            <TextView
+                android:id="@+id/tv_peoples"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/textView3"
+                android:layout_toStartOf="@+id/textView3"
+                android:gravity="center_vertical"
+                android:text="123"
+                android:textColor="#FE4546"
+                android:textSize="@dimen/sp11" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="人已参与"
+                android:textColor="#494949"
+                android:textSize="@dimen/sp11"
+                android:layout_alignTop="@+id/tv_peoples"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="#f2f2f2"
+        android:layout_height="1px"/>
+    <include layout="@layout/find_capture_iteam1" />
+    <View
+        android:layout_width="match_parent"
+        android:background="#f3f3f3"
+        android:layout_height="@dimen/dp7"/>
+</LinearLayout>

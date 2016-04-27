@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <com.shengtao.utils.LYDBHeader
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:background="@color/common_white"></com.shengtao.utils.LYDBHeader>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/lv_published"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:background="@color/common_white"
+            android:cacheColorHint="@android:color/transparent"
+            android:dividerHeight="@dimen/dp6"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            ptr:ptrAnimationStyle="flip"
+            ptr:ptrShowIndicator="false"
+            >
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+        <com.shengtao.baseview.TipsLayoutNormal
+            android:id="@+id/tl_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/common_background"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+
+</LinearLayout>

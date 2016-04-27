@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@color/common_white">
+
+    <FrameLayout
+        android:id="@+id/fl_animcotainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.shengtao.utils.LYDBHeader
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:layout_above="@+id/rl_go"
+                android:layout_alignParentTop="true" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.handmark.pulltorefresh.library.PullToRefreshListView
+                    android:id="@+id/lv_user_join"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@null"
+                    android:layout_above="@+id/fl_go"></com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+                <FrameLayout
+                    android:id="@+id/fl_go"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp50"
+                    android:layout_gravity="bottom"
+                    android:layout_alignParentBottom="true"
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/rl_go"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp50"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="bottom"
+                        android:background="@color/common_white"
+                        android:paddingLeft="@dimen/dp11"
+                        android:paddingRight="@dimen/dp11"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/tv_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="第456期正在火热进行..."
+                            android:textColor="#ff4447"
+                            android:textSize="@dimen/sp13" />
+
+                        <Button
+                            android:id="@+id/btn_go"
+                            android:layout_width="@dimen/dp95"
+                            android:layout_height="@dimen/dp34"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/btn_1"
+                            android:text="立即前往"
+                            android:textColor="@color/common_white"
+                            android:textSize="@dimen/sp15" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/layout_buy_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp50"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="bottom"
+                        android:background="@color/common_white"
+                        android:paddingLeft="@dimen/dp11"
+                        android:paddingRight="@dimen/dp11"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/dp50"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/common_bg"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btn_buy"
+                                style="@style/Btn_1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="@dimen/dp34"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/dp10"
+                                android:layout_weight="1.0"
+                                android:text="立即抢购" />
+
+                            <Button
+                                android:id="@+id/btn_shopcart"
+                                style="@style/Btn_4"
+                                android:layout_width="fill_parent"
+                                android:layout_height="@dimen/dp34"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/dp10"
+                                android:layout_weight="1.0"
+                                android:text="加入购物车" />
+
+                            <RelativeLayout
+                                android:id="@+id/btn_shopcart_show"
+                                android:layout_width="@dimen/dp60"
+                                android:layout_height="fill_parent"
+                                android:layout_alignParentRight="true">
+
+                                <ImageView
+                                    android:id="@+id/img_shopcart_ico"
+                                    android:layout_width="@dimen/dp25"
+                                    android:layout_height="@dimen/dp25"
+                                    android:layout_centerInParent="true"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/shoppingcart_select" />
+
+                                <LinearLayout
+                                    android:id="@+id/layout_shopcart_num"
+                                    android:layout_width="@dimen/dp16"
+                                    android:layout_height="@dimen/dp16"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_marginRight="@dimen/dp10"
+                                    android:layout_marginTop="@dimen/dp7"
+                                    android:background="@drawable/radius_line_red_4"
+                                    android:orientation="vertical"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        android:id="@+id/tv_shopcart_num"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:gravity="center"
+                                        android:text=""
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/sp8" />
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </FrameLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <com.shengtao.baseview.TipsLayoutNormal
+            android:id="@+id/tl_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/common_background"
+            android:visibility="gone" />
+    </FrameLayout>
+</FrameLayout>

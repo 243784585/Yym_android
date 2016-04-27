@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_white"
+    android:orientation="vertical">
+
+    <com.shengtao.utils.LYDBHeader
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp50"></com.shengtao.utils.LYDBHeader>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/lv_msg_sendgood"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listSelector="@drawable/timer_list_selector"
+            android:divider="@null"></com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+        <com.shengtao.baseview.TipsLayoutNormal
+            android:id="@+id/tl_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/common_background"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

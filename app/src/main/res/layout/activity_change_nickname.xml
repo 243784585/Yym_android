@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_background_color"
+    android:orientation="vertical">
+
+    <com.shengtao.utils.LYDBHeader
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"></com.shengtao.utils.LYDBHeader>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp17"
+        android:layout_marginLeft="@dimen/dp17"
+        android:layout_marginRight="@dimen/dp17"
+        android:layout_width="@dimen/dp326"
+        android:layout_height="@dimen/dp45"
+        android:background="@drawable/round_corner_et_change">
+
+        <com.shengtao.utils.ContainsEmojiEditText
+            android:id="@+id/et_client_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:textColor="@color/yym_black"
+            android:textSize="@dimen/sp12"
+            android:singleLine="true"
+            android:layout_marginLeft="@dimen/dp7"
+            android:maxLength="12"
+            android:hint="请输入昵称, 2-12字"
+            android:textColorHint="@color/change_qq_hint"
+            />
+
+        <ImageView
+            android:id="@+id/iv_clear"
+            android:layout_width="@dimen/dp16"
+            android:layout_height="@dimen/dp16"
+            android:layout_marginRight="@dimen/dp11"
+            android:src="@drawable/gerenxinxishanchuzifu"
+            android:layout_gravity="center"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+</LinearLayout>

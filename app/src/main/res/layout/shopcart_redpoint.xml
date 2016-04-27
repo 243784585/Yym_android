@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/btn_shopcart_show"
+    android:layout_width="@dimen/dp60"
+    android:layout_height="@dimen/dp50">
+
+    <ImageView
+        android:id="@+id/img_shopcart_ico"
+        android:layout_width="@dimen/dp25"
+        android:layout_height="@dimen/dp25"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp20"
+        android:scaleType="fitXY"
+        android:src="@drawable/btn_shopcart_selector" />
+
+    <LinearLayout
+        android:id="@+id/layout_shopcart_num"
+        android:layout_width="@dimen/dp16"
+        android:layout_height="@dimen/dp16"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginTop="@dimen/dp7"
+        android:background="@drawable/radius_line_red_4"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/tv_shopcart_num"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp8" />
+    </LinearLayout>
+</FrameLayout>

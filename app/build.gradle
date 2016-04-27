@@ -1,0 +1,54 @@
+apply plugin: 'com.android.application'
+// This does not break the build when Android Studio is missing the JRebel for Android plugin.
+apply plugin: 'com.zeroturnaround.jrebel.android'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion '22.0.1'
+
+    defaultConfig {
+        applicationId "com.shengtao"
+        minSdkVersion 14
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true//不编译未被引用的资源
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:21+'
+    compile project(':library')
+    compile files('libs/android-async-http-1.4.8.jar')
+    compile files('libs/universal-image-loader-1.9.4.jar')
+    compile files('libs/httpmime-4.1.3.jar')
+//    compile project(':smssdk')
+    compile project(':photolibrary')
+    compile project(':swipebacklayout')
+    compile files('libs/qiniu-android-sdk-7.0.1.jar')
+    compile files('libs/qiniuyun-api-zhb.jar')
+    compile files('libs/SocialSDK_QQZone_1.jar')
+    compile files('libs/SocialSDK_QQZone_2.jar')
+    compile files('libs/umeng_social_sdk.jar')
+    compile files('libs/SocialSDK_WeiXin_2.jar')
+    compile files('libs/SocialSDK_WeiXin_1.jar')
+    compile files('libs/SocialSDK_Sina.jar')
+    compile files('libs/SocialSDK_QQZone_3.jar')
+    compile files('libs/umeng-analytics-v5.2.4.jar')
+    compile project(':photolibrary')
+    compile files('libs/easemobchat_2.2.5.jar')
+    compile files('libs/easemobchat_2.2.4.jar')
+    compile files('libs/Parse-1.9.4.jar')
+    compile 'com.parse.bolts:bolts-android:1.2.0'
+    compile files('libs/jpush-sdk-release1.8.2.jar')
+    compile files('libs/pay_plugin.jar')
+    compile files('libs/weiboSDKCore_3.1.2.jar')
+}
+
+

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp10" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_bottom"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_btn_white_top_corner"
+            android:gravity="center"
+            android:minHeight="@dimen/dp40"
+            android:textSize="@dimen/sp17"
+            android:text="通过相片定位"
+            android:textColor="@color/common_blue" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp1"
+            android:background="@color/common_splitline" />
+
+        <TextView
+            android:id="@+id/tv_map"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_btn_white_bottom_corner"
+            android:gravity="center"
+            android:minHeight="@dimen/dp40"
+            android:textSize="@dimen/sp17"
+            android:text="在地图上直接定位"
+            android:textColor="@color/common_blue" />
+        
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_btn_white_corner"
+            android:gravity="center"
+            android:minHeight="@dimen/dp40"
+            android:layout_marginTop="@dimen/dp10"
+            android:textStyle="bold"
+            android:textSize="@dimen/sp17"
+            android:text="@string/common_text_cancel"
+            android:textColor="@color/common_blue" />
+    </LinearLayout>
+
+</RelativeLayout>

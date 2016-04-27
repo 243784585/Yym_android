@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <item type="drawable" name="common_white">@color/common_white</item>
+    <item type="drawable" name="common_blue">@color/common_blue</item>
+    <item type="drawable" name="common_red">@color/common_red</item>
+    <item type="drawable" name="common_white_transparent">@color/common_white_press</item>
+    <item type="drawable" name="common_transparent">@color/common_transparent</item>
+    <item type="drawable" name="common_light_black_transparent">@color/common_light_black_transparent</item>
+    <item type="drawable" name="common_light_white_transparent">@color/common_white_press</item>
+    <item type="drawable" name="common_black">@color/common_black</item>
+    <item type="drawable" name="light_black">@color/light_black</item>
+    <item type="drawable" name="light_gray">#eeeeee</item>
+    <item type="drawable" name="btn_back_press">#e5e3e1</item>
+
+</resources>

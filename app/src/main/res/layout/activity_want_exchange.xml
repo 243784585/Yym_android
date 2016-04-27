@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.shengtao.utils.LYDBHeader
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"></com.shengtao.utils.LYDBHeader>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp150"
+                android:background="@color/yym_common_red"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp17">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp16"
+                            android:layout_height="@dimen/dp17"
+                            android:src="@drawable/integralamount" />
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp7"
+                            android:text="积分金额"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp12" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/tv_integral"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp15"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dp39" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/tv_integral_today"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp9"
+                            android:text="今日收益（积分）: 0"
+                            android:layout_weight="1"
+                            android:gravity="top"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp11" />
+
+                        <TextView
+                            android:id="@+id/tv_integral_all"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="累计收益（积分）: 0"
+                            android:layout_marginTop="@dimen/dp9"
+                            android:paddingLeft="@dimen/dp17"
+                            android:gravity="top"
+                            android:textColor="@color/white"
+                            android:layout_weight="1"
+                            android:textSize="@dimen/sp11" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+            <!-- 分割线 -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp11"
+                android:background="@color/common_background_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp17"
+                android:textSize="@dimen/sp11"
+                android:textColor="@color/yym_gray"
+                android:text="选择兑换的抢币金额(100积分=1抢币)"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/dp17"
+                android:layout_marginRight="@dimen/dp17">
+                <RadioButton
+                    android:id="@+id/rb_1"
+                    android:button="@null"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp39"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/selector_recharge"
+                    android:textColor="@drawable/selector_recharge"
+                    android:textSize="@dimen/sp12"
+                    android:text="1"/>
+                <RadioButton
+                    android:id="@+id/rb_3"
+                    android:button="@null"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp39"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/dp11"
+                    android:layout_marginRight="@dimen/dp11"
+                    android:background="@drawable/selector_recharge"
+                    android:textColor="@drawable/selector_recharge"
+                    android:textSize="@dimen/sp12"
+                    android:text="3"/>
+                <RadioButton
+                    android:id="@+id/rb_5"
+                    android:button="@null"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp39"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:focusable="true"
+                    android:background="@drawable/selector_recharge"
+                    android:textColor="@drawable/selector_recharge"
+                    android:textSize="@dimen/sp12"
+                    android:text="5"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp11"
+                android:layout_marginLeft="@dimen/dp17"
+                android:layout_marginRight="@dimen/dp17">
+                <RadioButton
+                    android:id="@+id/rb_10"
+                    android:button="@null"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp39"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:focusable="true"
+                    android:background="@drawable/selector_recharge"
+                    android:textColor="@drawable/selector_recharge"
+                    android:textSize="@dimen/sp12"
+                    android:text="10"/>
+                <RadioButton
+                    android:id="@+id/rb_30"
+                    android:button="@null"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp39"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:focusable="true"
+                    android:layout_marginLeft="@dimen/dp11"
+                    android:layout_marginRight="@dimen/dp11"
+                    android:background="@drawable/selector_recharge"
+                    android:textColor="@drawable/selector_recharge"
+                    android:textSize="@dimen/sp12"
+                    android:text="30"/>
+                <RadioButton
+                    android:id="@+id/rb_50"
+                    android:button="@null"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp39"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:focusable="true"
+                    android:background="@drawable/selector_recharge"
+                    android:textColor="@drawable/selector_recharge"
+                    android:textSize="@dimen/sp12"
+                    android:text="50"
+                    android:textColorHint="@color/register_hint_color"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_now_exchange"
+                android:layout_marginTop="@dimen/dp11"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/dp17"
+                android:layout_marginRight="@dimen/dp17"
+                android:layout_marginBottom="@dimen/dp17"
+                android:layout_height="@dimen/dp34"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp14"
+                android:layout_gravity="center_horizontal"
+                android:text="立即兑换"
+                android:background="@drawable/btn_1"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/exchange_split_color"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp10"
+                android:background="@color/common_splitline_color"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp39"
+                android:layout_marginLeft="@dimen/dp17"
+                android:layout_marginRight="@dimen/dp17"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/yym_common_black"
+                    android:textSize="@dimen/sp12"
+                    android:text="本期参与"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/register_user_agreement_color"
+                    android:textSize="@dimen/sp10"
+                    android:text=" ( 最近30条记录 )"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/dp17"
+                android:layout_marginRight="@dimen/dp17"
+                android:background="@color/yym_common_red"/>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp20"
+                android:layout_marginTop="@dimen/dp11"
+                android:layout_marginLeft="@dimen/dp17"
+                android:layout_marginRight="@dimen/dp17"
+                android:layout_marginBottom="@dimen/dp17"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/register_user_agreement_color"
+                    android:gravity="center_horizontal|top"
+                    android:textSize="@dimen/sp11"
+                    android:text="时间"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/register_user_agreement_color"
+                    android:gravity="center_horizontal|top"
+                    android:textSize="@dimen/sp11"
+                    android:text="金额 ( 抢币 )"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/register_user_agreement_color"
+                    android:gravity="center_horizontal|top"
+                    android:textSize="@dimen/sp11"
+                    android:text="状态"
+                    />
+                
+            </LinearLayout>
+
+            <com.shengtao.utils.LargeListView
+                android:id="@+id/lv_exchange_record"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp75"
+                android:layout_marginLeft="@dimen/dp17"
+                android:layout_marginRight="@dimen/dp17"
+                android:dividerHeight="@dimen/dp17"
+                android:divider="@null"></com.shengtao.utils.LargeListView>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

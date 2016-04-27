@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.shengtao">
+
+    <!--在SDCard中创建与删除文件权限  -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--  从SDCard读取数据权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--允许访问网络请求-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+
+
+    <!-- Required 自定义用来收发消息的相关权限 -->
+    <permission
+        android:name="com.shengtao.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <!-- Required  一些系统要求的权限，如访问网络等-->
+    <uses-permission android:name="com.shengtao.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+
+    <!-- 短信验证码权限 -->
+    <!--<uses-permission android:name="android.permission.READ_CONTACTS" />-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <!--<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />-->
+
+    <!-- ###################声明SDK使用的相关权限###################### -->
+    <!-- 检测网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取mac地址作为用户的备用唯一标识 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取用户手机的IMEI，用来唯一的标识用户 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 缓存资源优先存入SDcard -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许应用程序联网，以便向我们的服务器端发送数据 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- QQ、QQ空间所需权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+
+    <!--环信-->
+    <!--<uses-permission android:name="android.permission.VIBRATE" />-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--录制音频-->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!--照片-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!--网络状态权限-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--允许挂载和反挂载文件系统可移动存储-->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!--<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!--<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />//允许修改全局声音的权限-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".application.UIApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="56865c43e0f55ae7a40000c0" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Umeng" />
+
+        <activity android:name=".main.MainActivity"
+            android:theme="@style/MainTheme"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            >
+
+        </activity>
+        <!-- 爱贝微信回调界面-->
+        <activity
+            android:name="com.iapppay.pay.channel.weixinpay.WeixinWapPayActivity"
+            android:configChanges="screenSize|orientation|keyboard|navigation|layoutDirection"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <!-- alipay sdk begin (新的支付宝) -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+
+
+        <!--购物车 start from here-->
+        <activity
+            android:name=".ShoppingCart.activity.ShoppingSubmitOrder"
+            android:configChanges="screenSize|orientation|keyboard|navigation|layoutDirection"></activity>
+        <activity android:name=".ShoppingCart.activity.ShoppingMainActivity" />
+        <!--购物车 end from here-->
+
+
+        <!--发现 start from here-->
+        <activity android:name=".discover.activity.OneCaptureActivity" />
+        <activity android:name=".discover.activity.ShareOrderActivity" />
+        <activity android:name=".discover.activity.ShareOrderItemActivity" />
+        <activity android:name=".discover.activity.WinnerDetailActivity" />
+        <activity android:name=".discover.activity.PartOneCaptureActivity" />
+        <!--发现 end from here-->
+        <!--夺宝  start from here-->
+
+        <activity android:name=".snache.activity.MessageActivity" />
+        <activity android:name=".snache.activity.PrizeDetailsActivity"></activity>
+        <activity android:name=".snache.activity.PublishedActivity" />
+        <activity android:name=".snache.activity.MessageSendGoodActivity" />
+        <activity android:name=".snache.activity.MessageWinning" />
+        <activity android:name=".snache.activity.MsgWinDetailsActivity" />
+        <activity android:name=".snache.activity.SnacheRule" />
+        <activity android:name=".snache.activity.ShowListActivity" />
+        <activity android:name=".nativeimg.NativeImageActivity" />
+        <activity android:name=".nativeimg.SingleImageActivity" />
+        <activity android:name=".snache.activity.SnacheStatement" />
+        <activity android:name=".snache.activity.CommonQuestionActivity" />
+        <activity android:name=".snache.activity.ServiceActivity" />
+        <activity android:name=".snache.activity.ServiceDetailActivity" />
+        <activity android:name=".snache.activity.SearchActivity" />
+        <activity android:name=".snache.activity.SearchResultActivity" />
+        <activity android:name=".snache.activity.CalcRuleActivity" />
+        <activity android:name=".snache.activity.AllGoodsActivity" />
+        <activity android:name=".snache.activity.BgNoticeActivity" />
+        <activity android:name=".snache.activity.UserAgreementActivity" />
+        <activity android:name=".snache.activity.MessageWinningDetails" />
+
+        <activity android:name=".snache.activity.AtyImagePagerActivity" />
+        <activity android:name=".snache.activity.test" />
+        <!--夺宝 end from here-->
+
+        <!--个人中心 start from here-->
+        <activity android:name=".mine.activity.OtherPersonCenter"></activity>
+        <activity android:name=".mine.activity.UseRuleActivity" />
+        <activity android:name=".mine.activity.IntegeralEarningDetailActivity" />
+        <activity android:name=".mine.activity.ExchangeRmbActivity" />
+        <!--个人中心 end from here-->
+
+        <!--登录注册 start from here-->
+        <activity android:name=".login.activity.LoginActivity"></activity>
+        <activity android:name=".mine.activity.RegisterActivity"></activity>
+        <activity android:name=".mine.activity.SetPwdActivity"></activity>
+        <activity android:name=".mine.activity.RetrievePasswordActivity"></activity>
+        <activity android:name=".mine.activity.ResetPasswordActivity"></activity>
+        <activity
+            android:name=".mine.activity.RechargeActivity"
+            android:configChanges="screenSize|orientation|keyboard|navigation|layoutDirection"></activity>
+        <activity android:name=".mine.activity.MyCouponActivity"></activity>
+        <activity android:name=".mine.activity.MyTracksActivity"></activity>
+        <activity android:name=".mine.activity.ReceiverAddressActivity"></activity>
+        <activity android:name=".mine.activity.PersonInformationActivity"></activity>
+        <activity android:name=".mine.activity.FreeRobMoneyActivity"></activity>
+
+        <activity android:name=".mine.activity.ChangeQQActivity"></activity>
+        <activity android:name=".mine.activity.ChangeNickNameActivity"></activity>
+        <activity android:name=".mine.activity.ChangeMobileActivity"></activity>
+        <activity android:name=".login.activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".login.activity.WelcomeActivity" />
+
+        <!--登录注册 end from here-->
+
+        <!-- 收货地址 start from here -->
+
+        <activity android:name=".mine.activity.RegionActivity"></activity>
+
+        <!-- 收货地址 end from here -->
+
+        <!--个人中心 start from here-->
+        <activity android:name=".mine.activity.NewsComerActivity" />
+        <activity android:name=".mine.activity.AboveUsActivity" />
+
+        <!--个人中心 end from here-->
+
+        <!--友盟统计 start from here-->
+        <!-- 分享编辑页 -->
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+
+        <!-- ############ QQ空间和QQ SSO授权的Activity注册 ############ -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- 100424468，如果你使用的公用账号，则不需要修改；否则修改成你在QQ开放平台申请的 APP ID -->
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 微信回调activity -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!--友盟统计 end from here-->
+
+
+        <!-- 短信验证码 start from here -->
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <!-- 短信验证码 end from here -->
+
+        <!-- 设置环信应用的appkey -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="12530#yiyuanmeng" />
+        <!-- 声明sdk所需的service SDK核心功能-->
+        <service android:name="com.easemob.chat.EMChatService" />
+
+        <!-- 环信 -->
+        <!-- 注册 -->
+        <!-- 聊天页面 -->
+        <activity
+            android:name=".chat.chatUI.activity.ChatActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- 添加好友 -->
+        <activity
+            android:name=".chat.chatUI.activity.AddContactActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="stateVisible" />
+        <!-- 群组详情 -->
+        <!-- 群组列表 -->
+
+        <activity
+            android:name=".chat.chatUI.activity.PublicGroupsSeachActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name=".chat.chatUI.activity.PublicGroupsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name=".chat.chatUI.activity.GroupPickContactsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name=".chat.chatUI.activity.GroupSimpleDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name=".chat.chatUI.activity.NewGroupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name=".chat.chatUI.activity.GroupsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="stateVisible" />
+        <activity android:name=".chat.chatUI.activity.MainActivity" />
+        <!-- 聊天室详情 -->
+
+
+        <!-- 新建群组 -->
+        <!-- 退出群组提示框 -->
+        <activity
+            android:name=".chat.chatUI.activity.ExitGroupDialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom" />
+        <!-- 群组选人 -->
+        <!-- 地图 -->
+
+
+        <!-- 新的朋友邀请消息页面 -->
+        <activity
+            android:name=".chat.chatUI.activity.NewFriendsMsgActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" />
+        <!-- 转发消息用户列表页面 -->
+        <activity
+            android:name=".chat.chatUI.activity.ForwardMessageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 自定义的contextmenu -->
+        <activity
+            android:name=".chat.chatUI.activity.ContextMenu"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyle" />
+        <!-- 自定义的alertdialog -->
+        <activity
+            android:name=".chat.chatUI.activity.AlertDialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyle" />
+        <!-- 显示下载大图页面 -->
+        <activity
+            android:name=".chat.chatUI.activity.ShowBigImage"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" />
+        <!-- 下载文件 -->
+        <!-- 黑名单 -->
+
+
+        <!-- 公开的群聊列表 -->
+
+
+        <!-- 语音通话 -->
+        <!-- 视频通话 -->
+        <!-- 群聊简单信息 -->
+        <!-- 群组黑名单用户列表 -->
+        <activity
+            android:name=".chat.chatUI.activity.EditActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="stateVisible" />
+        <!-- choose video -->
+        <activity
+            android:name=".chat.chatUI.activity.ImageGridActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <!-- upload error log -->
+        <activity
+            android:name=".chat.chatUI.activity.DiagnoseActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <!-- iOS offline push nick -->
+        <activity
+            android:name=".chat.chatUI.activity.OfflinePushNickActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <!-- 开机自启动服务 -->
+        <receiver android:name="com.easemob.chat.StartServiceReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.easemob.chat.EMGCMListenerService"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.easemob.chat.EMGCMBroadcastReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.easemob.chatuidemo" />
+            </intent-filter>
+        </receiver>
+        <!-- 声明sdk所需的service -->
+        <service android:name="com.easemob.chat.EMChatService" />
+
+        <receiver
+            android:name=".chat.chatUI.receiver.GCMPushBroadCast"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.easemob.sdk.push" />
+
+                <category android:name="com.easemob.chatuidemo" />
+            </intent-filter>
+        </receiver>
+
+
+        <!-- Required SDK核心功能-->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.shengtao" />
+            </intent-filter>
+        </activity>
+        <!-- Required  SDK核心功能-->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false"></service>
+
+
+        <!-- Required SDK 核心功能-->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+
+            </intent-filter>
+        </service>
+
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+                <category android:name="com.shengtao" />
+            </intent-filter>
+        </service>
+
+
+        <!-- Required SDK核心功能-->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+                <!--Required  显示通知栏 -->
+                <category android:name="com.shengtao" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+
+        </receiver>
+
+        <!-- Required SDK核心功能-->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+
+        <!-- User defined.  For test only  用户自定义的广播接收器-->
+        <receiver
+            android:name=".application.MyReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <!--Required  用户注册SDK的intent-->
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!--Required  用户接收SDK消息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!--Required  用户接收SDK通知栏信息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <!--Required  用户打开自定义通知栏的intent-->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" />
+                <!--Optional 用户接受Rich Push Javascript 回调函数的intent-->
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+                <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.shengtao" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="6b19ccd04f937d88f038cd4e" />
+        <!--1cc314990d60134b5318edb0-->
+    </application>
+</manifest>

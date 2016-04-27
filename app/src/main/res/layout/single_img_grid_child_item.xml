@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <com.shengtao.nativeimg.NativeImageView
+        android:id="@+id/single_child_image"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp100"
+        android:scaleType="fitXY" />
+</FrameLayout>

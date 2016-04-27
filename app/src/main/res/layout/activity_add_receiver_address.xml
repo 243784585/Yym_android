@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_background_color"
+    android:orientation="vertical">
+
+    <com.shengtao.utils.LYDBHeader
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"></com.shengtao.utils.LYDBHeader>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!-- 收货人 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp39"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/dp17"
+                android:layout_marginBottom="@dimen/dp1">
+
+                <TextView
+                    android:layout_width="@dimen/dp82"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/yym_black"
+                    android:textSize="@dimen/sp14"
+                    android:layout_gravity="center_vertical"
+                    android:text="收货人"/>
+
+                <com.shengtao.utils.ContainsEmojiEditText
+                    android:id="@+id/et_ship_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="请输入姓名"
+                    android:maxLength="20"
+                    android:textSize="@dimen/sp14"
+                    android:singleLine="true"
+                    android:textColorHint="@color/change_qq_hint"
+                    android:textColor="@color/yym_black"
+                    android:background="@null"
+                    />
+
+            </LinearLayout>
+
+
+            <!-- 联系方式 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp39"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/dp17"
+                android:layout_marginBottom="@dimen/dp1">
+
+                <TextView
+                    android:layout_width="@dimen/dp82"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/yym_black"
+                    android:textSize="@dimen/sp14"
+                    android:layout_gravity="center_vertical"
+                    android:text="联系方式"/>
+
+                <EditText
+                    android:id="@+id/et_ship_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="请输入联系方式"
+                    android:textSize="@dimen/sp14"
+                    android:singleLine="true"
+                    android:maxLength="11"
+                    android:numeric="integer"
+                    android:textColorHint="@color/change_qq_hint"
+                    android:textColor="@color/yym_black"
+                    android:background="@null"
+                    />
+
+            </LinearLayout>
+
+            <!-- 地区 -->
+            <LinearLayout
+                android:id="@+id/ll_region"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp39"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/dp17"
+                android:layout_marginBottom="@dimen/dp1">
+
+                <TextView
+                    android:layout_width="@dimen/dp82"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/yym_black"
+                    android:textSize="@dimen/sp14"
+                    android:layout_gravity="center_vertical"
+                    android:text="地区"/>
+
+                <TextView
+                    android:id="@+id/tv_region"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="#333333"
+                    android:gravity="center_vertical"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_region"
+                    android:layout_width="@dimen/dp12"
+                    android:layout_height="@dimen/dp7"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/dp17"
+                    android:src="@drawable/xialajiantou"/>
+
+            </LinearLayout>
+
+
+            <!-- 详细地址 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp39"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/dp17"
+                android:layout_marginBottom="@dimen/dp1">
+
+                <TextView
+                    android:layout_width="@dimen/dp82"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/yym_black"
+                    android:textSize="@dimen/sp14"
+                    android:layout_gravity="center_vertical"
+                    android:text="详细地址"/>
+
+                <com.shengtao.utils.ContainsEmojiEditText
+                    android:id="@+id/et_ship_address"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="请输入详细地址"
+                    android:maxLength="50"
+                    android:textSize="@dimen/sp14"
+                    android:singleLine="true"
+                    android:textColorHint="@color/change_qq_hint"
+                    android:textColor="@color/yym_black"
+                    android:background="@null"
+                    />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_ensure"
+                android:layout_marginTop="@dimen/dp17"
+                android:layout_width="@dimen/dp326"
+                android:layout_height="@dimen/dp34"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp14"
+                android:layout_gravity="center_horizontal"
+                android:text="确定"
+                android:background="@drawable/btn_1"
+                />
+        </LinearLayout>
+        <com.shengtao.baseview.TipsLayoutNormal
+            android:id="@+id/tl_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/common_background"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

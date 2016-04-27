@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.shengtao.utils.LYDBHeader
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"></com.shengtao.utils.LYDBHeader>
+
+    <!-- 进度图 -->
+    <ImageView
+        android:layout_width="@dimen/dp304"
+        android:layout_height="@dimen/dp18"
+        android:layout_marginTop="@dimen/dp34"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/zhuce3"/>
+
+
+    <LinearLayout
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+        <!-- 登录密码 -->
+        <ImageView
+            android:id="@+id/iv_login_password"
+            android:layout_width="@dimen/dp19"
+            android:layout_height="@dimen/dp57"
+            android:layout_marginRight="@dimen/dp15"
+            android:src="@drawable/mima"
+            android:background="@color/transparent"/>
+        <EditText
+            android:id="@+id/et_login_password"
+            android:layout_height="@dimen/dp57"
+            android:layout_width="@dimen/dp270"
+            android:background="@color/transparent"
+            android:hint="请设置6~20位登录密码"
+            android:singleLine="true"
+            android:maxLength="20"
+            android:password="true"
+            android:textColor="@color/yym_black"
+            android:textColorHint="@color/edittext_hint_color"/>
+    </LinearLayout>
+    <!-- 分割线 -->
+    <View
+        android:id="@+id/tv_second_splitline"
+        android:layout_width="@dimen/dp304"
+        android:layout_height="@dimen/dp1"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/login_border_color" />
+
+    <LinearLayout
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+        <!-- 邀请码 -->
+        <ImageView
+            android:id="@+id/iv_invitation_code"
+            android:layout_width="@dimen/dp19"
+            android:layout_height="@dimen/dp57"
+            android:layout_marginRight="@dimen/dp15"
+            android:src="@drawable/yqm"
+            android:background="@color/transparent"/>
+        <EditText
+            android:id="@+id/et_invitation_code"
+            android:layout_width="@dimen/dp270"
+            android:layout_height="@dimen/dp57"
+            android:background="@color/transparent"
+            android:hint="请输入邀请码(选填)"
+            android:singleLine="true"
+            android:maxLength="10"
+            android:numeric="integer"
+            android:textColor="@color/yym_black"
+            android:textColorHint="@color/edittext_hint_color"/>
+    </LinearLayout>
+
+    <!-- 分割线 -->
+    <View
+        android:id="@+id/tv_third_splitline"
+        android:layout_width="@dimen/dp304"
+        android:layout_height="@dimen/dp1"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/login_border_color" />
+
+
+    <Button
+        android:id="@+id/btn_submit_register"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp17"
+        android:layout_width="@dimen/dp304"
+        android:layout_height="@dimen/dp39"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp14"
+        android:text="提交"
+        android:background="@drawable/btn_1"
+        />
+
+</LinearLayout>

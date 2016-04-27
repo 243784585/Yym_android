@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_dialog"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp345"
+    android:layout_height="@dimen/dp272"
+    android:background="#ffffff"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp33"
+            android:text="修改购买数量"
+            android:textColor="#636363"
+            android:textSize="@dimen/sp20"/>
+
+
+        <com.shengtao.ShoppingCart.activity.AddAndSub
+            android:id="@+id/ads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp13"
+            android:layout_marginTop="@dimen/dp21"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp15"
+        android:layout_marginTop="@dimen/dp13"
+        android:background="#f2f2f2"
+        />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp20"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp15"
+        android:layout_marginTop="@dimen/dp18"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/btn_remove"
+            android:layout_width="@dimen/dp148"
+            android:layout_height="@dimen/dp51"
+            android:layout_marginRight="@dimen/dp15"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_share_shape"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#666666"
+            android:textSize="@dimen/sp12"/>
+
+        <TextView
+            android:id="@+id/btn_ok"
+            android:layout_width="@dimen/dp148"
+            android:layout_height="@dimen/dp51"
+            android:layout_weight="1"
+            android:background="@drawable/btn_shape"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/sp12"/>
+
+    </LinearLayout>
+</LinearLayout>

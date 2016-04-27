@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.shengtao.utils.LYDBHeader
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"></com.shengtao.utils.LYDBHeader>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <com.shengtao.utils.ContainsEmojiEditText
+                android:id="@+id/et_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp11"
+                android:layout_marginTop="@dimen/dp11"
+                android:background="@null"
+                android:gravity="start"
+                android:hint="请输入标题..."
+                android:lines="5"
+                android:textColor="@color/yym_common_black"
+                android:textColorHint="#c7c7cd"
+                android:maxLength="30"
+                android:textSize="@dimen/sp13" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp140"
+                android:layout_marginLeft="@dimen/dp11"
+                android:layout_marginRight="@dimen/dp11"
+                android:layout_marginTop="@dimen/dp11"
+                android:background="@drawable/background_edittext"
+                android:padding="@dimen/dp5">
+
+                <com.shengtao.utils.ContainsEmojiEditText
+                    android:id="@+id/et_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp140"
+                    android:gravity="start"
+                    android:hint="说说你夺宝的感想..."
+                    android:textColor="@color/yym_common_black"
+                    android:textColorHint="#c7c7cd"
+                    android:textSize="@dimen/sp13" />
+
+                <TextView
+                    android:id="@+id/tv_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginRight="@dimen/dp11"
+                    android:text="0/100"
+                    android:textColor="@color/yym_common_red"
+                    android:maxLength="100"
+                    android:textSize="@dimen/sp13" />
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp11"
+                android:layout_marginLeft="@dimen/dp11"
+                android:layout_marginTop="@dimen/dp11"
+                android:text="上传照片"
+                android:textColor="#555555"
+                android:textSize="@dimen/sp12" />
+
+            <com.shengtao.utils.LargeGridView
+                android:id="@+id/noScrollgridview"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:layout_marginLeft="@dimen/dp11"
+                android:horizontalSpacing="@dimen/dp3"
+                android:numColumns="3"
+                android:scrollbars="none"
+                android:verticalSpacing="@dimen/dp3" />
+
+            <com.shengtao.utils.LargeGridView
+                android:id="@+id/largeGridViewUpLoad"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:layout_marginLeft="@dimen/dp11"
+                android:horizontalSpacing="@dimen/dp3"
+                android:numColumns="3"
+                android:scrollbars="none"
+                android:verticalSpacing="@dimen/dp3"
+                android:visibility="gone" />
+
+            <com.shengtao.baseview.TipsLayoutNormal
+                android:id="@+id/tl_loading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/common_background"
+                android:visibility="gone" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>

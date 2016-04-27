@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.shengtao.utils.LYDBHeader
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50">
+    </com.shengtao.utils.LYDBHeader>
+
+
+    <LinearLayout
+        android:id="@+id/status_detail_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/rg_status_ded"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_capture"
+                style="@style/RadioButtonStatusDetailTab"
+                android:checked="true"
+                android:text="0元夺宝" />
+
+            <RadioButton
+                android:id="@+id/rb_past_result"
+                style="@style/RadioButtonStatusDetailTab"
+                android:text="往期揭晓" />
+
+            <RadioButton
+                android:id="@+id/rb_winer_order"
+                style="@style/RadioButtonStatusDetailTab"
+                android:text="获奖晒单" />
+        </RadioGroup>
+    </LinearLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_one_capture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.shengtao.baseview.TipsLayoutNormal
+        android:id="@+id/tl_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_background"
+        />
+</LinearLayout>

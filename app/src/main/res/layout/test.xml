@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/prize_item"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/color_white_gray">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="@dimen/dp10"
+        android:paddingLeft="@dimen/dp14"
+        android:paddingRight="@dimen/dp14"
+        android:paddingTop="@dimen/dp10">
+
+        <FrameLayout
+            android:id="@+id/fl_good_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_good_icon"
+            android:layout_width="@dimen/dp65"
+            android:layout_height="@dimen/dp65"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/moren" />
+
+            <ImageView
+                android:id="@+id/ico_characteristic"
+                android:layout_width="@dimen/dp20"
+                android:layout_height="@dimen/dp25"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/dp5"
+                android:background="@drawable/tenyuan"
+                android:visibility="gone" />
+        </FrameLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_toRightOf="@+id/fl_good_icon"
+            android:layout_marginBottom="@dimen/dp3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_goods_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="TITLE"
+                android:textColor="@color/common_black"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="价格"
+                android:textColor="@color/yym_gray"
+                android:textSize="@dimen/sp12" />
+
+            <RelativeLayout
+                android:id="@+id/rl_published"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp50"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="中  奖  者: "
+                            android:textColor="@color/yym_gray"
+                            android:textSize="@dimen/sp12" />
+
+                        <TextView
+                            android:id="@+id/tv_winner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="获得者"
+                            android:textColor="#ff2a99e0"
+                            android:textSize="@dimen/sp12" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="本期夺宝: "
+                            android:textColor="@color/yym_gray"
+                            android:textSize="@dimen/sp12" />
+
+                        <TextView
+                            android:id="@+id/tv_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10"
+                            android:textColor="@color/yym_gray"
+                            android:textSize="@dimen/sp12" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="人次"
+                            android:textColor="@color/yym_gray"
+                            android:textSize="@dimen/sp12" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_open_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="揭晓时间："
+                        android:textColor="@color/yym_gray"
+                        android:textSize="@dimen/sp12" />
+                </LinearLayout>
+
+                <com.shengtao.utils.CircleImageView
+                    android:id="@+id/iv_client_name"
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="@dimen/dp30"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/default_user_icon" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_is_released"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp50"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp5"
+                android:visibility="gone"
+                >
+
+                <View
+                    android:layout_width="@dimen/dp24"
+                    android:layout_height="@dimen/dp24"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:background="@drawable/time_red" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp50"
+                    android:text="揭晓中.."
+                    android:textColor="@color/yym_common_red"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/sp30" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_newpub"
+        android:layout_width="@dimen/dp50"
+        android:layout_height="@dimen/dp50"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ico_bingo_lottery"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/common_splitline"
+        android:layout_alignParentBottom="true"
+        ></View>
+</RelativeLayout>

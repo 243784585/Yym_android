@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_white"
+    android:orientation="vertical">
+
+    <com.shengtao.utils.LYDBHeader
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"></com.shengtao.utils.LYDBHeader>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp11"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp17"
+                android:text="计算公式"
+                android:textColor="@color/yym_common_red"
+                android:textSize="@dimen/sp13" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp11"
+                android:text="(数值A÷数值B)取余数+10000001"
+                android:textColor="#666666"
+                android:textSize="@dimen/sp11" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/dp19"
+                android:background="@color/common_splitline" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp15"
+                android:text="数值A"
+                android:textColor="@color/yym_common_black"
+                android:textSize="@dimen/sp13" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp11"
+                    android:text="="
+                    android:textColor="#888888" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp11"
+                    android:text="为截至该商品最后购买时间点前最后60条参与纪录的参与时间"
+                    android:textColor="#888888" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="=24565"
+                    android:textColor="@color/yym_common_red"
+                    android:textSize="@dimen/sp11"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_more"
+                    android:layout_width="@dimen/dp70"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp15"
+                    android:text="展开 ↓"
+                    android:textColor="@color/common_blue"
+                    android:padding="@dimen/dp5"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp15"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/ll_calc"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp25"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/tv_more"
+                    android:layout_marginTop="@dimen/dp15"
+                    android:paddingRight="@dimen/dp3"
+                    android:paddingBottom="@dimen/dp3"
+                    android:background="#F8F8F9"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp8"
+                    android:visibility="gone"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="夺宝时间"
+                        android:textColor="#888888"
+                        android:textSize="@dimen/sp10"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="参与账号"
+                        android:textColor="#888888"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/sp10"
+                        android:paddingLeft="@dimen/dp25"
+                        android:layout_gravity="center_vertical"
+                        />
+
+                </LinearLayout>
+
+                <com.shengtao.utils.LargeListView
+                    android:id="@+id/lv_calc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@null"
+                    android:layout_below="@+id/ll_calc"
+                    android:background="#F8F8F9"
+                    android:visibility="gone"
+                    android:layout_marginRight="@dimen/dp8"
+                    ></com.shengtao.utils.LargeListView>
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/dp19"
+                android:background="@color/common_splitline" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp15"
+                android:text="数值B"
+                android:textColor="@color/yym_common_black"
+                android:textSize="@dimen/sp13" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp9"
+                android:text="=奖品所需人次" />
+
+            <TextView
+                android:id="@+id/tv_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:text="=20000"
+                android:textColor="@color/yym_common_red"
+                android:textSize="@dimen/sp11"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/dp19"
+                android:background="@color/common_splitline" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp15"
+                android:text="=计算结果"
+                android:textColor="@color/yym_common_black"
+                android:textSize="@dimen/sp13" />
+
+            <TextView
+                android:id="@+id/tv_LuckyId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:gravity="center"
+                android:text="幸运号码 10001235"
+                android:textColor="@color/yym_common_red"
+                android:textSize="@dimen/sp11" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/dp19"
+                android:background="@color/common_splitline" />
+        </LinearLayout>
+
+        <com.shengtao.baseview.TipsLayoutNormal
+            android:id="@+id/tl_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/common_background"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    </ScrollView>
+</LinearLayout>

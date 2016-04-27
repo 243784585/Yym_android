@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.shengtao.utils.LYDBHeader
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"></com.shengtao.utils.LYDBHeader>
+
+    <LinearLayout
+        android:layout_width="@dimen/dp304"
+        android:layout_height="@dimen/dp87"
+        android:layout_gravity="center_horizontal">
+        <!-- 手机图 -->
+        <ImageView
+            android:id="@+id/iv_phone"
+            android:layout_marginTop="@dimen/dp45"
+            android:layout_marginLeft="@dimen/dp6"
+            android:layout_width="@dimen/dp18"
+            android:layout_height="@dimen/dp24"
+            android:src="@drawable/phone"
+            android:scaleType="fitStart"
+            />
+
+        <View
+            android:layout_marginTop="@dimen/dp45"
+            android:layout_marginLeft="@dimen/dp11"
+            android:layout_marginRight="@dimen/dp3"
+            android:layout_width="@dimen/dp1"
+            android:layout_height="@dimen/dp23"
+            android:background="@color/common_splitline_color"
+            />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_marginTop="@dimen/dp45"
+            android:layout_width="@dimen/dp274"
+            android:layout_height="@dimen/dp23"
+            android:background="@color/transparent"
+            android:textColor="@color/yym_black"
+            android:gravity="center_vertical"
+            android:maxLength="11"
+            android:numeric="integer"
+            android:textSize="@dimen/sp15"
+            android:hint="手机号码"
+            android:textColorHint="@color/change_qq_hint"/>
+
+    </LinearLayout>
+
+    <!-- 分割线 -->
+    <View
+        android:layout_width="@dimen/dp304"
+        android:layout_height="@dimen/dp1"
+        android:layout_gravity="center"
+        android:background="@color/common_splitline_color"/>
+
+    <!-- 验证码 -->
+    <LinearLayout
+        android:layout_width="@dimen/dp304"
+        android:layout_height="@dimen/dp57"
+        android:paddingTop="@dimen/dp12"
+        android:paddingBottom="@dimen/dp12"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/dp24"
+            android:layout_height="@dimen/dp18"
+            android:layout_marginRight="@dimen/dp11"
+            android:layout_marginLeft="@dimen/dp6"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/yanzhenma"/>
+
+
+        <EditText
+            android:id="@+id/et_code"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="验证码"
+            android:textColor="@color/yym_black"
+            android:maxLength="4"
+            android:textSize="@dimen/sp14"
+            android:numeric="integer"
+            android:singleLine="true"
+            android:textColorHint="@color/change_qq_hint"/>
+        <TextView
+            android:id="@+id/tv_getCode"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="获取验证码"
+            android:textSize="@dimen/sp10"
+            android:textColor="@color/yym_common_red"
+            android:gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <!-- 分割线 -->
+    <View
+        android:layout_width="@dimen/dp304"
+        android:layout_height="@dimen/dp1"
+        android:layout_gravity="center"
+        android:background="@color/common_splitline_color"/>
+
+    <!-- 提交 -->
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp17"
+        android:layout_width="@dimen/dp304"
+        android:layout_height="@dimen/dp39"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp14"
+        android:text="提交"
+        android:background="@drawable/btn_1"
+        />
+    
+</LinearLayout>

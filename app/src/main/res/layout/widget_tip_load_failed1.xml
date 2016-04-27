@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_load_faile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:visibility="visible" >
+
+
+        <LinearLayout
+            android:id="@+id/layout_shoppcart_null"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp113"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/dp88"
+                    android:layout_height="@dimen/dp88"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/gouwuche_empty" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:text="购物车快饿扁了"
+                    android:textColor="#494924"
+                    android:textSize="@dimen/sp14" />
+
+                <Button
+                    android:id="@+id/btn_go_to_buy"
+                    android:layout_width="@dimen/dp90"
+                    android:layout_height="@dimen/dp28"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp22"
+                    android:background="@drawable/btn_red_radius_border"
+                    android:text="马上夺宝"
+                    android:textColor="@drawable/color_2"
+                    android:textSize="@dimen/sp14" />
+            </LinearLayout>
+        </LinearLayout>
+
+</RelativeLayout>

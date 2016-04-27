@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.shengtao.utils.LYDBHeader
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"></com.shengtao.utils.LYDBHeader>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp158"
+                android:background="@color/yym_common_red"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp17">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp16"
+                            android:layout_height="@dimen/dp17"
+                            android:src="@drawable/integralamount" />
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp7"
+                            android:text="积分金额"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp12" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/tv_integral"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp15"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp39" />
+
+                    <TextView
+                        android:id="@+id/tv_integral_today"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp9"
+                        android:text="今日收益（积分）: 0"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp11" />
+
+                    <TextView
+                        android:id="@+id/tv_integral_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="累计收益（积分）: 0"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp11" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp17"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="@dimen/dp16"
+                            android:layout_height="@dimen/dp17"
+                            android:src="@drawable/yaoqinghaoyouleijiqiangbi" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp6"
+                            android:text="邀请好友累计抢币"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dp12" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_rmb_invite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp15"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp39" />
+
+                    <TextView
+                        android:id="@+id/tv_rmb_today"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp9"
+                        android:text="今日收益（抢币）: 0"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp11" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!-- 分割线 -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp17"
+                android:background="@color/common_background_color" />
+
+            <LinearLayout
+                android:id="@+id/ll_sign_in"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp39"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dp15"
+                    android:layout_height="@dimen/dp16"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp19"
+                    android:layout_marginRight="@dimen/dp14"
+                    android:src="@drawable/mianfeiqiangbiqiandao" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="签到"
+                    android:textColor="@color/register_user_agreement_color"
+                    android:textSize="@dimen/sp14" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp7"
+                    android:layout_height="@dimen/dp12"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/dp17"
+                    android:src="@drawable/gengduohei" />
+
+            </LinearLayout>
+
+            <!-- 分割线 -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:layout_marginLeft="@dimen/dp19"
+                android:background="@color/common_background_color" />
+
+            <LinearLayout
+                android:id="@+id/ll_invite_friends"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp39"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dp15"
+                    android:layout_height="@dimen/dp16"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp19"
+                    android:layout_marginRight="@dimen/dp14"
+                    android:src="@drawable/mainfeiqiangbiyaoqinghaoyou" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="邀请好友"
+                    android:textColor="@color/register_user_agreement_color"
+                    android:textSize="@dimen/sp14" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp7"
+                    android:layout_height="@dimen/dp12"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/dp17"
+                    android:src="@drawable/gengduohei" />
+
+            </LinearLayout>
+
+            <!-- 分割线 -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:layout_marginLeft="@dimen/dp19"
+                android:background="@color/common_background_color" />
+
+            <LinearLayout
+                android:id="@+id/ll_receiver_address"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp39"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dp15"
+                    android:layout_height="@dimen/dp16"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp19"
+                    android:layout_marginRight="@dimen/dp14"
+                    android:src="@drawable/mianfeiqiangbistianxieshouhuodizhi" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="填写收货地址"
+                    android:textColor="@color/register_user_agreement_color"
+                    android:textSize="@dimen/sp14" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp7"
+                    android:layout_height="@dimen/dp12"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/dp17"
+                    android:src="@drawable/gengduohei" />
+
+            </LinearLayout>
+
+            <!-- 分割线 -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp17"
+                android:background="@color/common_background_color" />
+
+            <LinearLayout
+                android:id="@+id/ll_want_exchange"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp39"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp17"
+                    android:layout_weight="1"
+                    android:text="我要兑换(100积分=1抢币)"
+                    android:textColor="@color/register_user_agreement_color"
+                    android:textSize="@dimen/sp12" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp7"
+                    android:layout_height="@dimen/dp12"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/dp17"
+                    android:src="@drawable/gengduohei" />
+
+            </LinearLayout>
+
+            <!-- 分割线 -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:layout_marginLeft="@dimen/dp19"
+                android:background="@color/common_background_color" />
+
+            <LinearLayout
+                android:id="@+id/ll_earnings_detail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp39"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp17"
+                    android:layout_weight="1"
+                    android:text="积分收益明细"
+                    android:textColor="@color/register_user_agreement_color"
+                    android:textSize="@dimen/sp12" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp7"
+                    android:layout_height="@dimen/dp12"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/dp17"
+                    android:src="@drawable/gengduohei" />
+
+            </LinearLayout>
+
+            <!-- 分割线 -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:layout_marginLeft="@dimen/dp19"
+                android:background="@color/common_background_color" />
+
+            <LinearLayout
+                android:id="@+id/ll_rmb_rule"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp39"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp17"
+                    android:layout_weight="1"
+                    android:text="抢币使用规则"
+                    android:textColor="@color/register_user_agreement_color"
+                    android:textSize="@dimen/sp12" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp7"
+                    android:layout_height="@dimen/dp12"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/dp17"
+                    android:src="@drawable/gengduohei" />
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/common_background_color"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <com.shengtao.baseview.TipsLayoutNormal
+            android:id="@+id/tl_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/common_background"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

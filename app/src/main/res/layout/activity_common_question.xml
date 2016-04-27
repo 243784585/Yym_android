@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:clipToPadding="true"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical"
+    >
+    <com.shengtao.utils.LYDBHeader
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"></com.shengtao.utils.LYDBHeader>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp11"
+                android:layout_marginRight="@dimen/dp11"
+                android:layout_marginTop="@dimen/dp20"
+                android:text="如以下问题未能帮助您，请采取以下方式联系我们。"
+                android:textColor="#666666"
+                android:textSize="@dimen/sp15"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp11"
+                android:layout_marginRight="@dimen/dp11"
+                android:layout_marginTop="@dimen/dp10"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="客服热线:"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/sp15"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:text="400-928-6430"
+                    android:textColor="@color/yym_common_red"
+                    android:textSize="@dimen/sp15"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp11"
+                android:layout_marginRight="@dimen/dp11"
+                android:layout_marginTop="@dimen/dp10"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="联系客服:"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/sp15"
+                    />
+
+                <Button
+                    android:id="@+id/btn_service"
+                    android:layout_width="@dimen/dp79"
+                    android:layout_height="@dimen/dp34"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:background="@drawable/app_btn_1_1"
+                    android:text="立即咨询"
+                    android:textColor="@color/common_white"
+                    android:textSize="@dimen/sp16"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_test2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp11"
+                android:layout_marginRight="@dimen/dp11"
+                android:layout_marginTop="@dimen/dp10"
+                android:lineSpacingMultiplier="1.5"
+                android:textSize="15sp"
+                android:text="嗨抢微信公共号:zaixian91
+(客服工作时间为正常工作日：9:00-18:00.其余时间咨询请将问题反馈至微信公共号，我们将尽快回复您。)
+这里是常见问题："
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp11"
+                android:layout_marginRight="@dimen/dp11"
+                android:layout_marginTop="@dimen/dp25"
+                android:layout_marginBottom="@dimen/dp15"
+                android:text="Q1、怎样查看我参与的商品有没有中奖？"
+                android:textColor="@color/yym_common_black"
+                android:textSize="@dimen/sp17"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp11"
+                android:layout_marginRight="@dimen/dp11"
+                android:text="A:每件商品开奖结果公布之后，登录网站并进入“个人中心”，在“我的足迹”中即可查询中奖情况。"
+                android:lineSpacingMultiplier="1.5"
+                android:textColor="#666666"
+                android:textSize="@dimen/sp15"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp11"
+                android:layout_marginRight="@dimen/dp11"
+                android:layout_marginTop="@dimen/dp25"
+                android:layout_marginBottom="@dimen/dp15"
+                android:lineSpacingMultiplier="1.5"
+                android:text="Q2: 什么时候发货？"
+                android:textColor="@color/yym_common_black"
+                android:textSize="@dimen/sp17"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp11"
+                android:layout_marginRight="@dimen/dp11"
+                android:text="A:虚拟商品如：（话费，Q币等）会在3个工作日内充值，个别用户充值后没有短信，建议拨打相关咨询电话咨询如（10086、10010、10000）。需要快递托运的商品会在7个工作日内发货。（工作日是指周末、法定节假日的工作时间，如果遇到国庆等长假期，小宝会在放假后，第一时间加班加点给大家配送商品的。）"
+                android:lineSpacingMultiplier="1.5"
+                android:textColor="#666666"
+                android:textSize="@dimen/sp15"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp11"
+                android:layout_marginRight="@dimen/dp11"
+                android:layout_marginTop="@dimen/dp25"
+                android:layout_marginBottom="@dimen/dp15"
+                android:lineSpacingMultiplier="1.5"
+                android:text="Q3: 我获得了奖品后，还须支付其他费用吗？"
+                android:textColor="@color/yym_common_black"
+                android:textSize="@dimen/sp17"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp11"
+                android:layout_marginRight="@dimen/dp11"
+                android:text="A:不需要支付任何其他费用。"
+                android:lineSpacingMultiplier="1.5"
+                android:textColor="#666666"
+                android:textSize="@dimen/sp15"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp11"
+                android:layout_marginRight="@dimen/dp11"
+                android:layout_marginTop="@dimen/dp25"
+                android:layout_marginBottom="@dimen/dp15"
+                android:lineSpacingMultiplier="1.5"
+                android:text="Q4: 当我获得奖品以后我该做什么？"
+                android:textColor="@color/yym_common_black"
+                android:textSize="@dimen/sp17"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp11"
+                android:layout_marginRight="@dimen/dp11"
+                android:text="A:您获奖后会收到站内信、短信和电子邮件的通知。在这之后，请到“个人中心”填写真实的收货地址，完善或确认您的个人信息，以便我们为您派发奖品。"
+                android:lineSpacingMultiplier="1.5"
+                android:textColor="#666666"
+                android:textSize="@dimen/sp15"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp11"
+                android:layout_marginRight="@dimen/dp11"
+                android:layout_marginTop="@dimen/dp25"
+                android:layout_marginBottom="@dimen/dp15"
+                android:lineSpacingMultiplier="1.5"
+                android:text="Q5: 商品是正品吗？怎么保证？"
+                android:textColor="@color/yym_common_black"
+                android:textSize="@dimen/sp17"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp11"
+                android:layout_marginRight="@dimen/dp11"
+                android:text="A:我们承诺，所有商品100%正品，由商家提供正规发票，可享受厂家所提供的全国联保服务，享受商品的保修、换货和退货的义务（国家三包政策）。其中像电子产品类高价值产品我们都是为您直接在京东等知名电商平台下单，由相应的大型电商平台直接发货，杜绝中间环节。"
+                android:lineSpacingMultiplier="1.5"
+                android:textColor="#666666"
+                android:textSize="@dimen/sp15"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp11"
+                android:layout_marginRight="@dimen/dp11"
+                android:layout_marginTop="@dimen/dp25"
+                android:layout_marginBottom="@dimen/dp15"
+                android:lineSpacingMultiplier="1.5"
+                android:text="Q6: 如何晒单分享？"
+                android:textColor="@color/yym_common_black"
+                android:textSize="@dimen/sp17"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp11"
+                android:layout_marginRight="@dimen/dp11"
+                android:text="A:在您收到商品后，登录网站，进入“发货消息”，在“确认收货”后点击晒单即可进入晒单流程。在您成功晒单后，您的晒单会出现在网站“晒单分享”区，与大家分享喜悦。"
+                android:lineSpacingMultiplier="1.5"
+                android:textColor="#666666"
+                android:textSize="@dimen/sp15"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp11"
+                android:layout_marginRight="@dimen/dp11"
+                android:layout_marginTop="@dimen/dp25"
+                android:layout_marginBottom="@dimen/dp15"
+                android:lineSpacingMultiplier="1.5"
+                android:text="Q7: 如何领奖？"
+                android:textColor="@color/yym_common_black"
+                android:textSize="@dimen/sp17"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp11"
+                android:layout_marginRight="@dimen/dp11"
+                android:text="A:在您获奖后会收到短信通知。收到通知后，请到个人中心填写真实的收货地址，完善或确认您的个人信息，以便我们为您派发获得的奖品。"
+                android:lineSpacingMultiplier="1.5"
+                android:textColor="#666666"
+                android:textSize="@dimen/sp15"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp11"
+                android:layout_marginRight="@dimen/dp11"
+                android:layout_marginTop="@dimen/dp25"
+                android:layout_marginBottom="@dimen/dp15"
+                android:lineSpacingMultiplier="1.5"
+                android:text="Q8: 我收到的奖品可以换货或者退货吗？"
+                android:textColor="@color/yym_common_black"
+                android:textSize="@dimen/sp17"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp11"
+                android:layout_marginRight="@dimen/dp11"
+                android:text="A:非质量问题，不在三包范围内，不给予退换货。请尽量亲自签收并当面拆箱验货，如果发现运输途中造成了奖品的损坏，请勿签收，可以拒签退回。"
+                android:lineSpacingMultiplier="1.5"
+                android:textColor="#666666"
+                android:textSize="@dimen/sp15"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp11"
+                android:layout_marginRight="@dimen/dp11"
+                android:layout_marginTop="@dimen/dp25"
+                android:layout_marginBottom="@dimen/dp15"
+                android:lineSpacingMultiplier="1.5"
+                android:text="Q9: 参与嗨抢需要注意什么？"
+                android:textColor="@color/yym_common_black"
+                android:textSize="@dimen/sp17"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp11"
+                android:layout_marginRight="@dimen/dp11"
+                android:text="A:为了确保在您获奖后第一时间通知您，请务必正确填写真实有效的联系电话、收货地址，以便在您中奖时能及时与您取得联系。"
+                android:lineSpacingMultiplier="1.5"
+                android:textColor="#666666"
+                android:textSize="@dimen/sp15"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp11"
+                android:layout_marginRight="@dimen/dp11"
+                android:layout_marginTop="@dimen/dp25"
+                android:layout_marginBottom="@dimen/dp15"
+                android:lineSpacingMultiplier="1.5"
+                android:text="Q10: 网上银行充值未及时到帐怎么办？"
+                android:textColor="@color/yym_common_black"
+                android:textSize="@dimen/sp17"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp11"
+                android:layout_marginRight="@dimen/dp11"
+                android:text="网上支付未及时到帐可能有以下几个原因造成："
+                android:lineSpacingMultiplier="1.5"
+                android:textColor="#666666"
+                android:textSize="@dimen/sp15"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp11"
+                android:layout_marginRight="@dimen/dp11"
+                android:text="一、由于网速或者支付接口等问题，支付数据没有及时传送到支付系统造成的；"
+                android:lineSpacingExtra="@dimen/dp15"
+                android:textColor="#666666"
+                android:textSize="@dimen/sp15"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp11"
+                android:layout_marginRight="@dimen/dp11"
+                android:text="二、网速过慢，数据传输超时，使银行后台支付信息不能成功对接，导致银行交易成功而支付后台显示失败；"
+                android:lineSpacingMultiplier="1.5"
+                android:textColor="#666666"
+                android:textSize="@dimen/sp15"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp11"
+                android:layout_marginRight="@dimen/dp11"
+                android:text="三、在网上支付如果使用某些防火墙软件，有时会屏蔽银行接口的弹出窗口，这时会造成在银行那边被扣费，但在我们网站上显示尚没支付。但请您放心，每天我们都会根据银行系统的帐务明细清单对前一天的订单进行逐笔核对，如遇问题订单，我们会做手工添加。建议反馈"
+                android:lineSpacingMultiplier="1.5"
+                android:textColor="#666666"
+                android:textSize="@dimen/sp15"
+                android:layout_marginBottom="5dp"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

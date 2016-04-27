@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp342"
+    android:layout_height="@dimen/dp107"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/dp342"
+        android:layout_height="@dimen/dp110"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp9"
+        android:background="@drawable/coupon"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp11">
+
+        <TextView
+            android:id="@+id/tv_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp19"
+            android:text="来源: 0元夺宝"
+            android:textColor="@color/register_hint_color"
+            android:textSize="@dimen/sp10"
+            android:visibility="invisible" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥"
+                    android:textColor="@color/yym_common_red"
+                    android:textSize="@dimen/sp17" />
+
+                <TextView
+                    android:id="@+id/tv_amount"
+                    android:layout_width="@dimen/dp159"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp8"
+                    android:text="50"
+                    android:textColor="@color/yym_common_red"
+                    android:textSize="@dimen/sp45" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_vertical"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:paddingTop="@dimen/dp10"
+                    android:text="商店:"
+                    android:textColor="@color/travel_details_gray"
+                    android:textSize="@dimen/sp12" />
+
+                <TextView
+                    android:id="@+id/tv_store"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="fill_vertical"
+                    android:layout_marginLeft="@dimen/dp7"
+                    android:layout_marginRight="@dimen/dp17"
+                    android:lineSpacingExtra="@dimen/dp6"
+                    android:paddingTop="@dimen/dp10"
+                    android:text=""
+                    android:textColor="@color/travel_details_gray"
+                    android:textSize="@dimen/sp12" />
+            </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016年01月01日"
+            android:textColor="@color/travel_details_gray"
+            android:textSize="@dimen/sp12"
+            android:layout_marginBottom="@dimen/dp3"
+            />
+
+    </LinearLayout>
+</LinearLayout>

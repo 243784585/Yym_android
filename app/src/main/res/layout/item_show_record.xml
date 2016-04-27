@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_share_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="终于到了，棒棒哒！！！"
+        android:textColor="@color/yym_common_black"
+        android:textSize="@dimen/sp13"
+        android:layout_marginTop="@dimen/dp11"
+        android:layout_marginLeft="@dimen/dp11"
+        />
+
+    <TextView
+        android:id="@+id/tv_goods_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(第222期) 小米之什么什么体重秤（颜色随机）阿德撒阿萨德"
+        android:textSize="@dimen/sp10"
+        android:textColor="@color/yym_common_gray"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_marginTop="@dimen/dp9"
+        android:layout_marginLeft="@dimen/dp11"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_share_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="感谢一圆梦，让我圆了自己的梦。"
+        android:textColor="#666666"
+        android:textSize="@dimen/sp11"
+        android:layout_marginTop="@dimen/dp9"
+        android:layout_marginBottom="@dimen/dp9"
+        android:layout_marginLeft="@dimen/dp11"
+        />
+
+    <com.shengtao.utils.MyGridView
+        android:id="@+id/gv_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_white"
+        android:horizontalSpacing="@dimen/dp2"
+        android:numColumns="3"
+        android:verticalSpacing="@dimen/dp2"
+        android:clipToPadding="true"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_marginLeft="@dimen/dp11"
+        android:layout_marginRight="@dimen/dp11"
+        android:stackFromBottom="false"
+        android:stretchMode="columnWidth"
+        android:scrollbars="none"
+        >
+    </com.shengtao.utils.MyGridView>
+
+    <!--android:descendantFocusability="blocksDescendants"-->
+    <!--android:scrollbars="none"-->
+    <!--android:stackFromBottom="false"-->
+    <!--android:stretchMode="columnWidth"-->
+    <!--android:clipToPadding="true"-->
+
+
+    <ImageView
+        android:id="@+id/image_single"
+        android:layout_width="@dimen/dp160"
+        android:layout_height="@dimen/dp160"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="@dimen/dp40"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp6">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp10"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp11"
+            android:src="@mipmap/time" />
+
+        <TextView
+            android:id="@+id/show_prized_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imageView"
+            android:gravity="center"
+            android:text="2015-11-11"
+            android:textColor="#999999"
+            android:textSize="@dimen/sp10"
+            android:layout_marginLeft="@dimen/dp3"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@color/common_splitline"
+        />
+</LinearLayout>

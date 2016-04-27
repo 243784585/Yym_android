@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dp10"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingMultiplier="1.5"
+        android:text="[2015-12-11] 恭喜您中奖了！"
+        android:textColor="@color/common_black"
+        android:textSize="@dimen/sp14" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="您的幸运号码：10002356"
+        android:textColor="@color/common_black"
+        android:textSize="@dimen/sp14"
+        android:layout_marginTop="@dimen/dp10"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="您中奖的宝物：第30期 苹果手机 6S 16G (颜色随机 唯一不同的是处处不同 联通移动电信三网通 正式起售)"
+        android:textColor="@color/common_black"
+        android:textSize="@dimen/sp14"
+        android:layout_marginTop="@dimen/dp10"
+        android:lineSpacingMultiplier="1.5"
+        />
+
+</LinearLayout>

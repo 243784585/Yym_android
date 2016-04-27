@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/dp70" >
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_menuitem_bg"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/dp40"
+            android:paddingLeft="@dimen/dp20"
+            android:text="@string/main_travel_gonglue_all"
+            android:textColor="@color/common_black"
+            android:textSize="@dimen/sp17" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp1"
+            android:background="@color/common_splitline" />
+
+        <TextView
+            android:id="@+id/tv_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_menuitem_bg"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/dp40"
+            android:paddingLeft="@dimen/dp20"
+            android:text="@string/main_travel_gonglue_view"
+            android:textColor="@color/common_black"
+            android:textSize="@dimen/sp17" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp1"
+            android:background="@color/common_splitline" />
+
+        <TextView
+            android:id="@+id/tv_food"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_menuitem_bg"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/dp40"
+            android:paddingLeft="@dimen/dp20"
+            android:text="@string/main_travel_gonglue_food"
+            android:textColor="@color/common_black"
+            android:textSize="@dimen/sp17" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp1"
+            android:background="@color/common_splitline" />
+
+        <TextView
+            android:id="@+id/tv_shopping"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_menuitem_bg"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/dp40"
+            android:paddingLeft="@dimen/dp20"
+            android:text="@string/main_travel_gonglue_shopping"
+            android:textColor="@color/common_black"
+            android:textSize="@dimen/sp17" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp1"
+            android:background="@color/common_splitline" />
+
+        <TextView
+            android:id="@+id/tv_hotel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_menuitem_bg"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/dp40"
+            android:paddingLeft="@dimen/dp20"
+            android:text="@string/main_travel_gonglue_shopping"
+            android:textColor="@color/common_black"
+            android:textSize="@dimen/sp17" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp1"
+            android:background="@color/common_splitline" />
+        
+        <TextView
+            android:id="@+id/tv_traffic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_menuitem_bg"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/dp40"
+            android:paddingLeft="@dimen/dp20"
+            android:text="@string/main_travel_gonglue_traffic"
+            android:textColor="@color/common_black"
+            android:textSize="@dimen/sp17" />
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp1"
+            android:background="@color/common_splitline" />
+        
+         <TextView
+            android:id="@+id/tv_experience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_menuitem_bg"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/dp40"
+            android:paddingLeft="@dimen/dp20"
+            android:text="@string/main_travel_gonglue_erperience"
+            android:textColor="@color/common_black"
+            android:textSize="@dimen/sp17" />
+    </LinearLayout>
+
+</RelativeLayout>
